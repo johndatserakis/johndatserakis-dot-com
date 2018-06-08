@@ -1,0 +1,57 @@
+{
+    "name": "johndatserakis-dot-com",
+    "version": "1.0.1",
+    "description": "The main code for johndatserakis.com.",
+    "private": true,
+    "author": "John Datserakis",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://johndatserakis@github.com/johndatserakis/johndatserakis-dot-com.git"
+    },
+    "bugs": {
+        "url": "https://github.com/johndatserakis/johndatserakis-dot-com/issues"
+    },
+    "keywords": [
+        "javacript",
+        "webpack",
+        "modern",
+        "starter"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "watch": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+        "build": "rm -rf ./dist && cross-env NODE_ENV=production webpack --progress --hide-modules"
+    },
+    "homepage": "https://github.com/johndatserakis/johndatserakis-dot-com#readme",
+    "dependencies": {
+        "bootstrap": "^4.1.1",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.3",
+        "vue": "^2.5.16"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.0.0-beta.49",
+        "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.49",
+        "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.49",
+        "@babel/plugin-transform-runtime": "^7.0.0-beta.49",
+        "@babel/preset-env": "^7.0.0-beta.49",
+        "@babel/runtime": "^7.0.0-beta.49",
+        "babel-loader": "^8.0.0-beta.3",
+        "cross-env": "^5.1.6",
+        "css-loader": "^0.28.11",
+        "file-loader": "^1.1.11",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.4.0",
+        "node-sass": "^4.9.0",
+        "optimize-css-assets-webpack-plugin": "^4.0.2",
+        "sass-loader": "^7.0.3",
+        "style-loader": "^0.21.0",
+        "uglifyjs-webpack-plugin": "^1.2.5",
+        "vue-loader": "^15.2.4",
+        "vue-template-compiler": "^2.5.16",
+        "webpack": "^4.11.0",
+        "webpack-cli": "^3.0.2",
+        "webpack-dev-server": "^3.1.4"
+    }
+}
