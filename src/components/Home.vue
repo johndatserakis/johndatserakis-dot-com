@@ -13,7 +13,7 @@
             </div>
 
             <p class="wrapper__left-wrapper__sub-text">
-                Hi there. My name is John Datserakis. I'm a Web/Mobile App Developer and Designer. I currently make cool things at <a href="https://promosis.com">Promosis</a>. I work on personal projects under <a href="https://innermonkdesign.com">Inner Monk Design</a>. The two blogs I write for are <a href="https://blog.innermonkdesign.com">The Inner Monk Blog</a> and <a href="https://thehiphographies.com">The Hiphographies</a>. You can find my iOS Apps and Games on the <a href="http://appstore.com/johndatserakis">App Store</a>. Recently I've been working on writing open-source code to share with the community. Check out my <a href="https://github.com/johndatserakis">GitHub</a> to see those projects. Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like.
+                Hi there. My name is John Datserakis. I'm a Full-Stack Web/Mobile App Developer and Designer from Boston's North Shore. I currently make cool things at <a href="https://promosis.com">Promosis</a>. The two blogs I write for are <a href="https://blog.innermonkdesign.com">The Inner Monk Blog</a> and <a href="https://thehiphographies.com">The Hiphographies</a>. You can find my iOS Apps and Games on the <a href="http://appstore.com/johndatserakis">App Store</a>. I like to write open-source code to share with the community. Check out my <a href="https://github.com/johndatserakis">GitHub</a> to see those projects. Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like.
             </p>
         </div>
 
@@ -54,7 +54,7 @@ export default {
                 {
                     name: 'Twitter',
                     icon: 'fa-twitter',
-                    link: 'https://twitter.com/innermonkdesign'
+                    link: 'https://twitter.com/johndatserakis'
                 },
                 {
                     name: 'LinkedIn',
@@ -101,10 +101,12 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            background: $white;
+            background: linear-gradient(115deg, $white, darken($white, 10%));
 
             @media (min-width: 992px) {
                 width: 50%;
-                border-right: 1px solid $yellow;
+                border-right: 2px solid darken($blue, 15%);
             }
 
             &__lead-text {
@@ -139,10 +141,11 @@ export default {
             height: 100%;
             width: 100%;
             background: $blue;
+            background: linear-gradient(115deg, $blue, darken($blue, 10%));
             color: $white;
 
             @media (min-width: 992px) {
-                box-shadow: -4px 0 10px 0 rgba($black, 0.2);
+                // box-shadow: -2px 0 4px 0 rgba($black, 0.05);
                 width: 50%;
                 overflow: scroll;
             }
