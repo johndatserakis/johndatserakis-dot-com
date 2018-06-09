@@ -20,6 +20,9 @@ const config = {
       chunks: 'all',
     },
   },
+  devServer: {
+    historyApiFallback: true
+  },
   devtool: (env === 'development') ? 'cheap-module-eval-source-map' : undefined,
   module: {
     rules: [
@@ -81,6 +84,12 @@ const config = {
       chunkFilename: (env !== 'production') ? '[id].css' : '[id].[hash].css',
     })
   ],
+  resolve: {
+      extensions: ['.js', '.vue', '.json'],
+      alias: {
+        '@': path.join(__dirname, 'src')
+      }
+  }
 };
 
 if (env === 'production') {

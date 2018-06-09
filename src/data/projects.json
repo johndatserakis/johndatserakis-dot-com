@@ -2,91 +2,189 @@
     {
         "title": "⭐ The House Cup",
         "description": "The easiest way to track your competitions.",
-        "link": "https://thehousecupapp.com/",
-        "linkText": "View Project"
+        "links": [
+            {
+                "link": "https://thehousecupapp.com/",
+                "linkText": "View Project"
+            }
+        ]
+
     },
     {
         "title": "⭐ vue-countable (open-source)",
         "description": "Vue binding for countable.js. Provides real-time paragraph, sentence, word, and character counting.",
-        "link": "https://github.com/johndatserakis/vue-countable",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/vue-countable",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://johndatserakis.github.io/vue-countable/",
+                "linkText": "View live demo"
+            }
+        ]
+
     },
     {
         "title": "⭐ file-upload-with-preview (open-source) (for Promosis)",
         "description": "A simple file-upload utility that shows a preview of the uploaded image. Written in pure JavaScript. No dependencies. Works well with Bootstrap 4 or without a framework.",
-        "link": "https://github.com/promosis/file-upload-with-preview",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/promosis/file-upload-with-preview",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://promosis.github.io/file-upload-with-preview/",
+                "linkText": "View live demo"
+            }
+        ]
     },
     {
         "title": "⭐ Best Meta",
         "description": "Best Meta makes it easy to browse the best selling products online.",
-        "link": "https://bestmeta.com/",
-        "linkText": "View Project"
+        "links": [
+            {
+                "link": "https://bestmeta.com/",
+                "linkText": "View Project"
+            }
+        ]
     },
     {
         "title": "⭐ chrome-ribbon-reminder (open-source)",
         "description": "A Chrome extension written using Vue and Async/Await. Uses a popup display and changes badge counts.",
-        "link": "https://github.com/johndatserakis/chrome-ribbon-reminder",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/chrome-ribbon-reminder",
+                "linkText": "View on GitHub"
+            }
+        ]
     },
     {
         "title": "⭐ vue-simple-context-menu (open-source)",
         "description": "Simple context-menu component built for Vue. Works well with both left and right clicks. Nothing too fancy, just works and is simple to use.",
-        "link": "https://github.com/johndatserakis/vue-simple-context-menu",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/vue-simple-context-menu",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://johndatserakis.github.io/vue-simple-context-menu/",
+                "linkText": "View live demo"
+            }
+        ]
     },
     {
         "title": "⭐ modern-webpack-starter (open-source)",
         "description": "A modern JavaScript starter using Webpack 4. Made in a simple way - good for learning or starting a new project without having to rollout cli-auto-builders.",
-        "link": "https://github.com/johndatserakis/modern-webpack-starter",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/modern-webpack-starter",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://modern-webpack-starter.innermonkdesign.com/",
+                "linkText": "View live demo"
+            }
+        ]
     },
     {
         "title": "⭐ vue-cookie-accept-decline (open-source) (for Promosis)",
         "description": "Show a banner with text, a decline button, and an accept button on your page. Remembers selection using cookies. Emits an event with current selection and on creation. Good for GDPR requirements.",
-        "link": "https://github.com/promosis/vue-cookie-accept-decline",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/promosis/vue-cookie-accept-decline",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://promosis.github.io/vue-cookie-accept-decline/",
+                "linkText": "View live demo"
+            }
+        ]
     },
     {
         "title": "⭐ koa-vue-notes-web (open-source)",
         "description": "A simple SPA built using Koa (2.5.1) as the backend and Vue (2.5.16) as the frontend. Features MySQL integration, user authentication, CRUD note actions, and Vuex store modules.",
-        "link": "https://github.com/johndatserakis/koa-vue-notes-web",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/koa-vue-notes-web",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://koa-vue-notes-web.innermonkdesign.com/",
+                "linkText": "View live demo"
+            }
+        ]
     },
     {
         "title": "⭐ John Datserakis Website (open-source)",
         "description": "This website! Written using Vue 2.5.16 and Webpack 4. Go ahead and fork it!",
-        "link": "https://github.com/johndatserakis/johndatserakis-dot-com",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/johndatserakis-dot-com",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://johndatserakis.com/",
+                "linkText": "View live demo"
+            }
+        ]
     },
     {
         "title": "⭐ koa-vue-notes-api (open-source)",
         "description": "A simple SPA built using Koa (2.5.1) as the backend and Vue (2.5.16) as the frontend. Features MySQL integration, user authentication, CRUD note actions, and Vuex store modules.",
-        "link": "https://github.com/johndatserakis/koa-vue-notes-api",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/koa-vue-notes-api",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://koa-vue-notes-web.innermonkdesign.com/",
+                "linkText": "View live demo"
+            }
+        ]
     },
     {
         "title": "⭐ Nickey's Pizza Website",
         "description": "Every pizza is hand-made. Every sub is cooked to order. The same way for 40 years.",
-        "link": "https://nickeyspizza.com/",
-        "linkText": "View Project"
+        "links": [
+            {
+                "link": "https://nickeyspizza.com/",
+                "linkText": "View Project"
+            }
+        ]
     },
     {
         "title": "⭐ koa-vue-notes-project (open-source)",
         "description": "A single repo containing both the koa-vue-notes-api and koa-vue-notes-web projects.",
-        "link": "https://github.com/johndatserakis/koa-vue-notes-project",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/koa-vue-notes-project",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://koa-vue-notes-web.innermonkdesign.com/",
+                "linkText": "View live demo"
+            }
+        ]
     },
     {
         "title": "⭐ The Hiphographies",
         "description": "A Music Museum.",
-        "link": "https://thehiphographies.com/",
-        "linkText": "View Project"
+        "links": [
+            {
+                "link": "https://thehiphographies.com/",
+                "linkText": "View Project"
+            }
+        ]
     },
     {
         "title": "⭐ RecordPlayer (open-source)",
         "description": "Emulate a record player in Sprite Kit using Swift and Xcode.",
-        "link": "https://github.com/johndatserakis/RecordPlayer",
-        "linkText": "View on GitHub"
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/RecordPlayer",
+                "linkText": "View on GitHub"
+            }
+        ]
     }
 ]

@@ -25,8 +25,10 @@
                 </div>
                 <div class="wrapper__right-wrapper__item__description">
                     {{project.description}}
-                    <a :href="project.link" class="wrapper__right-wrapper__item__link" target="_blank">
-                        {{project.linkText}} <i class="fa fa-long-arrow-right"></i>
+                </div>
+                <div>
+                    <a v-for="link in project.links" :href="link.link" class="wrapper__right-wrapper__item__link" target="_blank">
+                        <i class="fa fa-external-link- fa-fw"></i> {{link.linkText}}
                     </a>
                 </div>
 
@@ -84,18 +86,19 @@ export default {
     @import '../assets/css/app.scss';
 
     .wrapper {
-        height: 100%;
+
         width: 100%;
         display: flex;
         flex-direction: column;
 
         @media (min-width: 992px) {
+            height: 100%;
             flex-direction: row;
-            height: 100vh;
+            // height: 100vh;
         }
 
         &__left-wrapper {
-            height: 100%;
+
             width: 100%;
             padding: 30px;
             display: flex;
@@ -105,8 +108,10 @@ export default {
             background: linear-gradient(115deg, $white, darken($white, 10%));
 
             @media (min-width: 992px) {
+                box-shadow: 2px 0 6px 0 rgba($black, 0.35);
+                z-index: 1000;
+                height: 100%;
                 width: 50%;
-                border-right: 2px solid darken($blue, 15%);
             }
 
             &__lead-text {
@@ -138,14 +143,14 @@ export default {
 
         &__right-wrapper {
             padding: 30px;
-            height: 100%;
+
             width: 100%;
             background: $blue;
             background: linear-gradient(115deg, $blue, darken($blue, 10%));
             color: $white;
 
             @media (min-width: 992px) {
-                // box-shadow: -2px 0 4px 0 rgba($black, 0.05);
+                height: 100%;
                 width: 50%;
                 overflow: scroll;
             }
@@ -167,6 +172,7 @@ export default {
                 &__title {
                     font-size: 1.4rem;
                     margin-bottom: 5px;
+                    font-weight: bold;
                 }
 
                 &__description {
@@ -174,7 +180,7 @@ export default {
                 }
 
                 &__link {
-                    margin-left: 5px;
+                    margin-right: 5px;
                     font-size: 0.9rem;
                     color: $yellow;
 
