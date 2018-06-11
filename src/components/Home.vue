@@ -28,7 +28,7 @@
                 </div>
                 <div>
                     <a v-for="link in project.links" :href="link.link" class="wrapper__right-wrapper__item__link" target="_blank">
-                        <i class="fa fa-external-link- fa-fw"></i> {{link.linkText}}
+                        <i class="fa fa-external-link fa-fw"></i> {{link.linkText}}
                     </a>
                 </div>
 
