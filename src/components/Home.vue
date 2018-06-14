@@ -13,7 +13,15 @@
             </div>
 
             <p class="wrapper__left-wrapper__sub-text">
-                Hi there. My name is John Datserakis. I'm a Full-Stack Web/Mobile App Developer and Designer from Boston's North Shore. I currently make cool things at <a href="https://promosis.com">Promosis</a>. The two blogs I write for are <a href="https://blog.innermonkdesign.com">The Inner Monk Blog</a> and <a href="https://thehiphographies.com">The Hiphographies</a>. You can find my iOS Apps and Games on the <a href="http://appstore.com/johndatserakis">App Store</a>. I like to write open-source code to share with the community. Check out my <a href="https://github.com/johndatserakis">GitHub</a> to see those projects. Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like.
+                Hi there. My name is John Datserakis. I'm a Lead Full-Stack Developer and Designer from Boston's North Shore. I currently make cool things at <a href="https://promosis.com">Promosis</a>. The two blogs I write for are <a href="https://blog.innermonkdesign.com">The Inner Monk Blog</a> and <a href="https://thehiphographies.com">The Hiphographies</a>. You can find my iOS Apps and Games on the <a href="http://appstore.com/johndatserakis">App Store</a>. I like to write open-source code to share with the community. Check out my <a href="https://github.com/johndatserakis">GitHub</a> to see those projects.
+            </p>
+
+            <p class="wrapper__left-wrapper__sub-text">
+               I'm always working on something new! My latest app is <a href="https://thehousecupapp.com">The House Cup</a> - it's an app to help friends keep track of their tournaments.
+            </p>
+
+            <p class="wrapper__left-wrapper__sub-text">
+                Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like.
             </p>
         </div>
 
@@ -94,7 +102,6 @@ export default {
         @media (min-width: 992px) {
             height: 100%;
             flex-direction: row;
-            // height: 100vh;
         }
 
         &__left-wrapper {
@@ -105,7 +112,7 @@ export default {
             flex-direction: column;
             justify-content: center;
             background: $white;
-            background: linear-gradient(115deg, $white, darken($white, 10%));
+            background: linear-gradient(115deg, $white, darken($white, 5%));
 
             @media (min-width: 992px) {
                 box-shadow: 2px 0 6px 0 rgba($black, 0.35);
@@ -182,10 +189,10 @@ export default {
                 &__link {
                     margin-right: 5px;
                     font-size: 0.9rem;
-                    color: $yellow;
+                    color: darken($white, 10%);
 
                     &:hover {
-                        color: darken($yellow, 5%);
+                        color: darken($white, 20%);
                     }
                 }
             }
