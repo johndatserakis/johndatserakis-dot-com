@@ -105,17 +105,16 @@ export default {
         }
 
         &__left-wrapper {
-
             width: 100%;
             padding: 30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             background: $white;
-            background: linear-gradient(115deg, $white, darken($white, 5%));
+            background: linear-gradient(115deg, $white, darken($white, 2%));
 
             @media (min-width: 992px) {
-                box-shadow: 2px 0 6px 0 rgba($black, 0.35);
+                // box-shadow: 2px 0 6px 0 rgba($black, 0.35);
                 z-index: 1000;
                 height: 100%;
                 width: 50%;
@@ -150,7 +149,6 @@ export default {
 
         &__right-wrapper {
             padding: 30px;
-
             width: 100%;
             background: $blue;
             background: linear-gradient(115deg, $blue, darken($blue, 10%));

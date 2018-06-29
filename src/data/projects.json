@@ -1,5 +1,19 @@
 [
     {
+        "title": "⭐ koa-react-notes-web (open-source)",
+        "description": "A simple SPA built using Koa (2.5.1) as the backend and React (16.4.1) as the frontend. Features MySQL integration, user authentication, CRUD note actions, and more.",
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/koa-react-notes-web",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://johndatserakis.github.io/koa-react-notes-web/",
+                "linkText": "View live demo"
+            }
+        ]
+    },
+    {
         "title": "⭐ The House Cup",
         "description": "The easiest way to track your competitions.",
         "links": [
