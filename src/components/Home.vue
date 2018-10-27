@@ -60,7 +60,7 @@
                 </p>
 
                 <p>
-                    Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like.
+                    Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like. If you like this site you can <a href="https://github.com/johndatserakis/johndatserakis-dot-com">fork it</a> - it's open-source and written using Vue and Webpack.
                 </p>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 once: true
             }"
             class="wrapper__right-wrapper">
-            <h1 class="wrapper__right-wrapper__lead-text">Recent Work</h1>
+            <h1 class="wrapper__right-wrapper__lead-text">Links</h1>
             <div v-for="project in projects" :key="project.title" class="wrapper__right-wrapper__item">
                 <div class="wrapper__right-wrapper__item__title">
                     {{project.title}}
