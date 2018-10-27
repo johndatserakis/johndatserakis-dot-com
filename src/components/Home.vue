@@ -2,9 +2,39 @@
 
     <div class="wrapper">
         <div class="wrapper__left-wrapper">
-            <h1 class="wrapper__left-wrapper__lead-text">John <span class="blue-text">Datserakis</span></h1>
+            <img
+                style="opacity: 0;"
+                id="wrapper__left-wrapper__lead-image"
+                v-observe-visibility="{
+                    callback: visibilityChanged,
+                    throttle: 0,
+                    once: true
+                }"
+                src="@/assets/images/main/john-datserakis-profile-image.png"
+                alt="John Datserakis"
+                class="img-fluid wrapper__left-wrapper__lead-image">
 
-            <div class="wrapper__left-wrapper__social-wrapper">
+            <h1
+                style="opacity: 0;"
+                id="wrapper__left-wrapper__lead-text"
+                v-observe-visibility="{
+                    callback: visibilityChanged,
+                    throttle: 0,
+                    once: true
+                }"
+                class="wrapper__left-wrapper__lead-text">
+                John <span class="blue-text">Datserakis</span>
+            </h1>
+
+            <div
+                style="opacity: 0;"
+                id="wrapper__left-wrapper__social-wrapper"
+                v-observe-visibility="{
+                    callback: visibilityChanged,
+                    throttle: 0,
+                    once: true
+                }"
+                class="wrapper__left-wrapper__social-wrapper">
                 <div v-for="socialItem in socialItems" :key="socialItem.name" class="wrapper__left-wrapper__social-wrapper__item">
                     <a :href="socialItem.link" target="_blank">
                         <i :class="'fa ' + socialItem.icon"></i>
@@ -12,21 +42,39 @@
                 </div>
             </div>
 
-            <p class="wrapper__left-wrapper__sub-text">
-                Hi there. My name is John Datserakis. I'm a Lead Full-Stack Developer and Designer from Boston's North Shore. I currently make cool things at <a href="https://promosis.com">Promosis</a>. The two blogs I write for are <a href="https://blog.innermonkdesign.com">The Inner Monk Blog</a> and <a href="https://thehiphographies.com">The Hiphographies</a>. You can find my iOS Apps and Games on the <a href="http://appstore.com/johndatserakis">App Store</a>. I like to write open-source code to share with the community. Check out my <a href="https://github.com/johndatserakis">GitHub</a> to see those projects.
-            </p>
+            <div
+                style="opacity: 0;"
+                id="wrapper__left-wrapper__sub-text"
+                v-observe-visibility="{
+                    callback: visibilityChanged,
+                    throttle: 0,
+                    once: true
+                }"
+                class="wrapper__left-wrapper__sub-text">
+                <p>
+                    Hi there. My name is John Datserakis. I'm a Lead Full-Stack Developer and Designer from Boston's North Shore. I currently make cool things at <a href="https://promosis.com">Promosis</a>. The two blogs I write for are <a href="https://blog.innermonkdesign.com">The Inner Monk Blog</a> and <a href="https://thehiphographies.com">The Hiphographies</a>. You can find my iOS Apps and Games on the <a href="http://appstore.com/johndatserakis">App Store</a>. I like to write open-source code to share with the community. Check out my <a href="https://github.com/johndatserakis">GitHub</a> to see those projects.
+                </p>
 
-            <p class="wrapper__left-wrapper__sub-text">
-               I'm always working on something new! My latest app is <a href="https://thehousecupapp.com">The House Cup</a> - it's an app to help friends keep track of their tournaments.
-            </p>
+                <p>
+                   I'm always working on something new! My latest project is <a href="https://github.com/promosis/vue-programmatic-invisible-google-recaptcha" target="_blank">vue-programmatic-invisible-google-recaptcha</a> - it's an open-source Vue component that helps Vue developers with the programmatic invocation of Google's invisible reCAPTCHA.
+                </p>
 
-            <p class="wrapper__left-wrapper__sub-text">
-                Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like.
-            </p>
+                <p>
+                    Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like.
+                </p>
+            </div>
         </div>
 
-        <div class="wrapper__right-wrapper">
-            <h1 class="wrapper__right-wrapper__lead-text">My Recent Work</h1>
+        <div
+            style="opacity: 0;"
+            id="wrapper__right-wrapper"
+            v-observe-visibility="{
+                callback: visibilityChanged,
+                throttle: 0,
+                once: true
+            }"
+            class="wrapper__right-wrapper">
+            <h1 class="wrapper__right-wrapper__lead-text">Recent Work</h1>
             <div v-for="project in projects" :key="project.title" class="wrapper__right-wrapper__item">
                 <div class="wrapper__right-wrapper__item__title">
                     {{project.title}}
@@ -47,7 +95,7 @@
 </template>
 
 <script>
-import projects from '../data/projects'
+import projects from '@/data/projects'
 export default {
     name: 'home',
     props: {
@@ -84,6 +132,68 @@ export default {
     watch: {
     },
     methods: {
+        async visibilityChanged (isVisible, entry) {
+            // Fade up
+            if ( isVisible && (entry.target.id === 'wrapper__left-wrapper__lead-text' || entry.target.id === 'wrapper__left-wrapper__lead-image') ) {
+                await this.$animejs({
+                    targets: '#' + entry.target.id,
+                    duration: 0,
+                    opacity: 0,
+                    translateY: 50,
+                    easing: 'linear'
+                }).finished
+
+                await this.$animejs({
+                    targets: '#' + entry.target.id,
+                    scale: 1.0,
+                    duration: 2000,
+                    opacity: 1,
+                    translateY: 0,
+                    easing: 'easeOutElastic',
+                    delay: 0
+                }).finished
+            }
+
+            // Fade up
+            if ( isVisible && (entry.target.id === 'wrapper__left-wrapper__social-wrapper' || entry.target.id === 'wrapper__left-wrapper__sub-text') ) {
+                await this.$animejs({
+                    targets: '#' + entry.target.id,
+                    duration: 0,
+                    opacity: 0,
+                    translateY: 50,
+                    easing: 'linear'
+                }).finished
+
+                await this.$animejs({
+                    targets: '#' + entry.target.id,
+                    scale: 1.0,
+                    duration: 2000,
+                    opacity: 1,
+                    translateY: 0,
+                    easing: 'easeOutElastic',
+                    delay: 200
+                }).finished
+            }
+
+            // Fade up
+            if ( isVisible && (entry.target.id === 'wrapper__right-wrapper') ) {
+                await this.$animejs({
+                    targets: '#' + entry.target.id,
+                    duration: 0,
+                    opacity: 0,
+                    easing: 'linear'
+                }).finished
+
+                await this.$animejs({
+                    targets: '#' + entry.target.id,
+                    scale: 1.0,
+                    duration: 2000,
+                    opacity: 1,
+                    easing: 'easeOutElastic',
+                    delay: 200
+                }).finished
+            }
+        }
     },
     mounted () {
     }
@@ -91,10 +201,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import '../assets/css/app.scss';
+    @import '~@/assets/css/components/_variables.scss';
 
     .wrapper {
-
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -109,15 +218,26 @@ export default {
             padding: 30px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             background: $white;
             background: linear-gradient(115deg, $white, darken($white, 2%));
 
             @media (min-width: 992px) {
-                // box-shadow: 2px 0 6px 0 rgba($black, 0.35);
-                z-index: 1000;
                 height: 100%;
                 width: 50%;
+                overflow: scroll;
+            }
+
+            &__lead-image {
+                filter: drop-shadow(0 4px 4px rgba($black, 0.15));
+                height: 175px;
+                width: 175px;
+                display: block;
+                margin: 0 auto 20px;
+
+                @media (min-width: 992px) {
+                    display: block;
+                    margin-left: 0;
+                }
             }
 
             &__lead-text {
@@ -139,7 +259,7 @@ export default {
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
-                margin-bottom: 20px;
+                margin-bottom: 40px;
 
                 &__item {
                     margin-right: 10px;
@@ -150,9 +270,9 @@ export default {
         &__right-wrapper {
             padding: 30px;
             width: 100%;
-            background: $blue;
-            background: linear-gradient(115deg, $blue, darken($blue, 10%));
-            color: $white;
+            background: $grey;
+            background: linear-gradient(115deg, $grey, darken($grey, 10%));
+            color: $black;
 
             @media (min-width: 992px) {
                 height: 100%;
@@ -164,7 +284,7 @@ export default {
                 margin-bottom: 40px;
                 font-size: 2.2rem;
                 font-weight: bold;
-                color: $white;
+                color: $dark-blue;
 
                 @media (min-width: 992px) {
                     font-size: 2.8rem;
@@ -178,6 +298,7 @@ export default {
                     font-size: 1.4rem;
                     margin-bottom: 5px;
                     font-weight: bold;
+                    color: $muted;
                 }
 
                 &__description {
@@ -187,10 +308,10 @@ export default {
                 &__link {
                     margin-right: 5px;
                     font-size: 0.9rem;
-                    color: darken($white, 10%);
+                    color: darken($dark-blue, 10%);
 
                     &:hover {
-                        color: darken($white, 20%);
+                        color: darken($dark-blue, 20%);
                     }
                 }
             }
@@ -198,6 +319,6 @@ export default {
     }
 
     .blue-text {
-        color: $blue;
+        color: $dark-blue;
     }
 </style>

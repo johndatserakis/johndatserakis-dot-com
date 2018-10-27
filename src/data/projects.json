@@ -1,6 +1,30 @@
 [
     {
-        "title": "⭐ koa-react-notes-web (open-source)",
+        "title": "Guest blog post for vuejsdevelopers.com ",
+        "description": "Comparing the React and Vue Ecosystems with a Real-World SPA",
+        "links": [
+            {
+                "link": "https://vuejsdevelopers.com/2018/09/04/comparing-vue-and-react",
+                "linkText": "Read the post"
+            }
+        ]
+    },
+    {
+        "title": "vue-programmatic-invisible-google-recaptcha (open-source) (for  Promosis)",
+        "description": "A simple invisible Google reCAPTCHA component focused solely on programmatic invocation.",
+        "links": [
+            {
+                "link": "https://github.com/promosis/vue-programmatic-invisible-google-recaptcha",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://promosis.github.io/vue-programmatic-invisible-google-recaptcha/",
+                "linkText": "View live demo"
+            }
+        ]
+    },
+    {
+        "title": "koa-react-notes-web (open-source)",
         "description": "A simple SPA built using Koa (2.5.1) as the backend and React (16.4.1) as the frontend. Features MySQL integration, user authentication, CRUD note actions, and more.",
         "links": [
             {
@@ -8,13 +32,13 @@
                 "linkText": "View on GitHub"
             },
             {
-                "link": "https://johndatserakis.github.io/koa-react-notes-web/",
+                "link": "https://koa-react-notes-web.innermonkdesign.com",
                 "linkText": "View live demo"
             }
         ]
     },
     {
-        "title": "⭐ The House Cup",
+        "title": "The House Cup",
         "description": "The easiest way to track your competitions.",
         "links": [
             {
@@ -25,7 +49,7 @@
 
     },
     {
-        "title": "⭐ vue-countable (open-source)",
+        "title": "vue-countable (open-source)",
         "description": "Vue binding for countable.js. Provides real-time paragraph, sentence, word, and character counting.",
         "links": [
             {
@@ -40,7 +64,7 @@
 
     },
     {
-        "title": "⭐ file-upload-with-preview (open-source) (for Promosis)",
+        "title": "file-upload-with-preview (open-source) (for Promosis)",
         "description": "A simple file-upload utility that shows a preview of the uploaded image. Written in pure JavaScript. No dependencies. Works well with Bootstrap 4 or without a framework.",
         "links": [
             {
@@ -54,7 +78,7 @@
         ]
     },
     {
-        "title": "⭐ Best Meta",
+        "title": "Best Meta",
         "description": "Best Meta makes it easy to browse the best selling products online.",
         "links": [
             {
@@ -64,7 +88,7 @@
         ]
     },
     {
-        "title": "⭐ chrome-ribbon-reminder (open-source)",
+        "title": "chrome-ribbon-reminder (open-source)",
         "description": "A Chrome extension written using Vue and Async/Await. Uses a popup display and changes badge counts.",
         "links": [
             {
@@ -74,7 +98,7 @@
         ]
     },
     {
-        "title": "⭐ vue-simple-context-menu (open-source)",
+        "title": "vue-simple-context-menu (open-source)",
         "description": "Simple context-menu component built for Vue. Works well with both left and right clicks. Nothing too fancy, just works and is simple to use.",
         "links": [
             {
@@ -88,7 +112,7 @@
         ]
     },
     {
-        "title": "⭐ modern-webpack-starter (open-source)",
+        "title": "modern-webpack-starter (open-source)",
         "description": "A modern JavaScript starter using Webpack 4. Made in a simple way - good for learning or starting a new project without having to rollout cli-auto-builders.",
         "links": [
             {
@@ -102,7 +126,7 @@
         ]
     },
     {
-        "title": "⭐ vue-cookie-accept-decline (open-source) (for Promosis)",
+        "title": "vue-cookie-accept-decline (open-source) (for Promosis)",
         "description": "Show a banner with text, a decline button, and an accept button on your page. Remembers selection using cookies. Emits an event with current selection and on creation. Good for GDPR requirements.",
         "links": [
             {
@@ -116,7 +140,7 @@
         ]
     },
     {
-        "title": "⭐ koa-vue-notes-web (open-source)",
+        "title": "koa-vue-notes-web (open-source)",
         "description": "A simple SPA built using Koa (2.5.1) as the backend and Vue (2.5.16) as the frontend. Features MySQL integration, user authentication, CRUD note actions, and Vuex store modules.",
         "links": [
             {
@@ -130,7 +154,7 @@
         ]
     },
     {
-        "title": "⭐ John Datserakis Website (open-source)",
+        "title": "John Datserakis Website (open-source)",
         "description": "This website! Written using Vue 2.5.16 and Webpack 4. Go ahead and fork it!",
         "links": [
             {
@@ -144,7 +168,7 @@
         ]
     },
     {
-        "title": "⭐ koa-vue-notes-api (open-source)",
+        "title": "koa-vue-notes-api (open-source)",
         "description": "A simple SPA built using Koa (2.5.1) as the backend and Vue (2.5.16) as the frontend. Features MySQL integration, user authentication, CRUD note actions, and Vuex store modules.",
         "links": [
             {
@@ -158,7 +182,7 @@
         ]
     },
     {
-        "title": "⭐ Nickey's Pizza Website",
+        "title": "Nickey's Pizza Website",
         "description": "Every pizza is hand-made. Every sub is cooked to order. The same way for 40 years.",
         "links": [
             {
@@ -168,7 +192,7 @@
         ]
     },
     {
-        "title": "⭐ koa-vue-notes-project (open-source)",
+        "title": "koa-vue-notes-project (open-source)",
         "description": "A single repo containing both the koa-vue-notes-api and koa-vue-notes-web projects.",
         "links": [
             {
@@ -182,7 +206,7 @@
         ]
     },
     {
-        "title": "⭐ The Hiphographies",
+        "title": "The Hiphographies",
         "description": "A Music Museum.",
         "links": [
             {
@@ -192,7 +216,7 @@
         ]
     },
     {
-        "title": "⭐ RecordPlayer (open-source)",
+        "title": "RecordPlayer (open-source)",
         "description": "Emulate a record player in Sprite Kit using Swift and Xcode.",
         "links": [
             {

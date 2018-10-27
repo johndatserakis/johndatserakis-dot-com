@@ -25,6 +25,12 @@ Vue.use(VueAnalytics, {
     checkDuplicatedScript: true
 })
 
+import VueAnime from '@/common/animejs'
+Vue.use(VueAnime)
+
+import VueObserveVisibility from 'vue-observe-visibility'
+Vue.use(VueObserveVisibility)
+
 import './assets/css/app.scss';
 
 new Vue({

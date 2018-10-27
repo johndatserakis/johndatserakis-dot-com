@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader');
 
 const env = process.env.NODE_ENV;
@@ -82,7 +83,10 @@ const config = {
       // both options are optional
       filename: (env !== 'production') ? '[name].css' : '[name].[hash].css',
       chunkFilename: (env !== 'production') ? '[id].css' : '[id].[hash].css',
-    })
+    }),
+    new CopyWebpackPlugin([
+      './src/social.png'
+    ])
   ],
   resolve: {
       extensions: ['.js', '.vue', '.json'],
