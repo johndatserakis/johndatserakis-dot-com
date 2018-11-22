@@ -1,5 +1,15 @@
 [
     {
+        "title": "Best Meta",
+        "description": "Best Meta makes it easy to browse the most popular products on Amazon.",
+        "links": [
+            {
+                "link": "https://www.bestmeta.com/",
+                "linkText": "View Project"
+            }
+        ]
+    },
+    {
         "title": "Guest blog post for vuejsdevelopers.com ",
         "description": "Comparing the React and Vue Ecosystems with a Real-World SPA",
         "links": [
@@ -74,16 +84,6 @@
             {
                 "link": "https://promosis.github.io/file-upload-with-preview/",
                 "linkText": "View live demo"
-            }
-        ]
-    },
-    {
-        "title": "Best Meta",
-        "description": "Best Meta makes it easy to browse the best selling products online.",
-        "links": [
-            {
-                "link": "https://bestmeta.com/",
-                "linkText": "View Project"
             }
         ]
     },
