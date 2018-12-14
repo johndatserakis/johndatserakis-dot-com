@@ -14,3 +14,12 @@ body {
     font-family: 'Bitter', serif;
     line-height: 1.7;
 }
+
+//Main link styling
+a {
+    color: $blue;
+
+    &:hover {
+        color: $dark-blue;
+    }
+}

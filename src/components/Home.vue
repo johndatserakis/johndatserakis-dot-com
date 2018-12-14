@@ -60,7 +60,7 @@
                 </p>
 
                 <p>
-                    Thanks for checking out my work. Email me at adstwlearn at gmail dot com if you'd like. If you like this site you can <a href="https://github.com/johndatserakis/johndatserakis-dot-com">fork it</a> - it's open-source and written using Vue and Webpack.
+                    Thanks for checking out my work. Email me at johndatserakis at gmail dot com if you'd like. If you like this site you can <a href="https://github.com/johndatserakis/johndatserakis-dot-com">fork it</a> - it's open-source and written using Vue and Webpack.
                 </p>
             </div>
         </div>

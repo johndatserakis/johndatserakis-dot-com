@@ -1,5 +1,15 @@
 [
     {
+        "title": "Link Control",
+        "description": "Link control is an extension that lets you adjust the color of your previously viewed links.",
+        "links": [
+            {
+                "link": "https://chrome.google.com/webstore/detail/link-control/dibehcgiapedhoehgpinmkdmahlheekc",
+                "linkText": "View in Chrome Web Store"
+            }
+        ]
+    },
+    {
         "title": "Best Meta",
         "description": "Best Meta makes it easy to browse the most popular products on Amazon.",
         "links": [
@@ -94,6 +104,10 @@
             {
                 "link": "https://github.com/johndatserakis/chrome-ribbon-reminder",
                 "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://chrome.google.com/webstore/detail/ribbon-reminder/ahdegcekcodbkojmccabgmfcfddabnbd?authuser=2",
+                "linkText": "View in Chrome Web Store"
             }
         ]
     },
