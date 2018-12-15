@@ -31,6 +31,13 @@ Vue.use(VueAnime)
 import VueObserveVisibility from 'vue-observe-visibility'
 Vue.use(VueObserveVisibility)
 
+import Toasted from 'vue-toasted'
+Vue.use(Toasted, {
+    position: 'top-right',
+    duration: 2300,
+    singleton: true
+})
+
 import './assets/css/app.scss';
 
 new Vue({

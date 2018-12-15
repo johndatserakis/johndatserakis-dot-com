@@ -26,13 +26,16 @@
     "homepage": "https://github.com/johndatserakis/johndatserakis-dot-com#readme",
     "dependencies": {
         "animejs": "^2.2.0",
+        "axios": "^0.18.0",
         "bootstrap": "^4.1.1",
+        "dotenv-webpack": "^1.5.7",
         "jquery": "^3.3.1",
         "popper.js": "^1.14.3",
         "vue": "^2.5.16",
         "vue-analytics": "^5.12.2",
         "vue-observe-visibility": "^0.4.3",
-        "vue-router": "^3.0.1"
+        "vue-router": "^3.0.1",
+        "vue-toasted": "^1.1.26"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0-beta.49",

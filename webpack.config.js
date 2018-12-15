@@ -4,7 +4,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const { VueLoaderPlugin } = require('vue-loader');
+const { VueLoaderPlugin } = require('vue-loader')
+const Dotenv = require('dotenv-webpack')
 
 const env = process.env.NODE_ENV;
 
@@ -66,6 +67,7 @@ const config = {
     ],
   },
   plugins: [
+    new Dotenv(),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       favicon: path.join(__dirname, 'src', 'favicon.ico'),
