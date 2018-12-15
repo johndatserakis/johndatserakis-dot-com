@@ -301,7 +301,6 @@ export default {
         }
     },
     mounted () {
-        console.log(process.env, process.env.CONTACT_FORM_ENDPOINT, process.env.API_KEY)
     }
 }
 </script>
