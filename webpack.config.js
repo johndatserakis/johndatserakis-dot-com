@@ -67,7 +67,7 @@ const config = {
     ],
   },
   plugins: [
-    new Dotenv(),
+    new Dotenv({systemvars: true}),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       favicon: path.join(__dirname, 'src', 'favicon.ico'),
