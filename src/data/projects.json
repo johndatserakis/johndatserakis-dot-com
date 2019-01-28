@@ -1,5 +1,15 @@
 [
     {
+        "title": "Guest on the Views on Vue podcast",
+        "description": "Comparing the React and Vue Ecosystems with a Real-World SPA with John Datserakis",
+        "links": [
+            {
+                "link": "https://devchat.tv/views-on-vue/vov-045-comparing-the-react-and-vue-ecosystems-with-a-real-world-spa-with-john-datserakis/",
+                "linkText": "Listen to the Podcast"
+            }
+        ]
+    },
+    {
         "title": "Link Control",
         "description": "Link control is an extension that lets you adjust the color of your previously viewed links.",
         "links": [
