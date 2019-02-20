@@ -153,7 +153,7 @@
 
 <script>
 import projects from '@/data/projects'
-import axios from 'axios'
+import axios from '@/common/axios'
 
 export default {
     name: 'home',
@@ -274,15 +274,10 @@ export default {
                     return
                 }
 
-                const response = await axios({
-                    method: 'post',
-                    url: process.env.CONTACT_FORM_ENDPOINT,
-                    data:  {
-                        email: this.contactFormData.email,
-                        message: this.contactFormData.message,
-                        type: 'johndatserakis'
-                    },
-                    headers: {'x-api-key': process.env.API_KEY},
+                const response = await axios.post('/contact', {
+                    email: this.contactFormData.email,
+                    message: this.contactFormData.message,
+                    type: 'johndatserakis'
                 })
 
                 this.$toasted.success('Message sent successfully. Thank you.')
