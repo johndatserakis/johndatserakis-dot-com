@@ -1,5 +1,47 @@
 [
     {
+        "title": "vue-navigation-bar (open-source)",
+        "description": "A simple, pretty navbar for your Vue projects.",
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/vue-navigation-bar",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://johndatserakis.github.io/vue-navigation-bar/",
+                "linkText": "View live demo"
+            }
+        ]
+    },
+    {
+        "title": "vue-mock-layout (open-source) (for  Promosis)",
+        "description": "Easily mock the layout of your Vue apps.",
+        "links": [
+            {
+                "link": "https://github.com/promosis/vue-mock-layout",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://promosis.github.io/vue-mock-layout/",
+                "linkText": "View live demo"
+            }
+        ]
+    },
+    {
+        "title": "vue-screen-size (open-source) (for  Promosis)",
+        "description": "Get easy and reactive access to the width and height of your screen.",
+        "links": [
+            {
+                "link": "https://github.com/promosis/vue-screen-size",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://promosis.github.io/vue-screen-size/",
+                "linkText": "View live demo"
+            }
+        ]
+    },
+    {
         "title": "Guest on the Views on Vue podcast",
         "description": "Comparing the React and Vue Ecosystems with a Real-World SPA with John Datserakis",
         "links": [
