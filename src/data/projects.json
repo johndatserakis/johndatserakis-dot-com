@@ -4,12 +4,8 @@
         "description": "Website for the Boston band bloom. - a duo formed by Matt Dipietro and Torre Cioffi in mid 2017.",
         "links": [
             {
-                "link": "https://github.com/johndatserakis/vue-navigation-bar",
-                "linkText": "View on GitHub"
-            },
-            {
-                "link": "https://johndatserakis.github.io/vue-navigation-bar/",
-                "linkText": "View live demo"
+                "link": "https://www.bloombandma.com",
+                "linkText": "View website"
             }
         ]
     },
