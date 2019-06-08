@@ -344,6 +344,7 @@ export default {
                 margin-bottom: 20px;
                 font-size: 2.2rem;
                 font-weight: bold;
+                color: $black;
 
                 @media (min-width: 992px) {
                     font-size: 4.0rem;
@@ -398,11 +399,12 @@ export default {
                     font-size: 1.4rem;
                     margin-bottom: 5px;
                     font-weight: bold;
-                    color: $muted;
+                    color: $black;
                 }
 
                 &__description {
                     font-size: 0.9rem;
+                    color: $muted;
                 }
 
                 &__link {
