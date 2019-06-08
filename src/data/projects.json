@@ -1,5 +1,19 @@
 [
     {
+        "title": "vue-video-section (open-source)",
+        "description": "A simple video header/section component for Vue. Good for video backgrounds and overlaying content on them.",
+        "links": [
+            {
+                "link": "https://github.com/johndatserakis/vue-video-section",
+                "linkText": "View on GitHub"
+            },
+            {
+                "link": "https://johndatserakis.github.io/vue-video-section/",
+                "linkText": "View live demo"
+            }
+        ]
+    },
+    {
         "title": "bloom. website",
         "description": "Website for the Boston band bloom. - a duo formed by Matt Dipietro and Torre Cioffi in mid 2017.",
         "links": [
