@@ -1,5 +1,15 @@
 [
     {
+        "title": "RSVP Keeper",
+        "description": "Easily accept RSVP's for your Wedding, Shower, Bar Mitzvah, or any other event. Get your event up and running in no time.",
+        "links": [
+            {
+                "link": "https://www.rsvpkeeper.com/",
+                "linkText": "View website"
+            }
+        ]
+    },
+    {
         "title": "vue-video-section (open-source)",
         "description": "A simple video header/section component for Vue. Good for video backgrounds and overlaying content on them.",
         "links": [
@@ -142,7 +152,6 @@
                 "linkText": "View Project"
             }
         ]
-
     },
     {
         "title": "vue-countable (open-source)",
@@ -157,7 +166,6 @@
                 "linkText": "View live demo"
             }
         ]
-
     },
     {
         "title": "file-upload-with-preview (open-source) (for Promosis)",
