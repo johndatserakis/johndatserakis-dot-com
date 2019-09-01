@@ -342,7 +342,7 @@ export default {
 
             &__lead-text {
                 margin-bottom: 20px;
-                font-size: 2.2rem;
+                font-size: 2.0rem;
                 font-weight: bold;
                 color: $black;
 
