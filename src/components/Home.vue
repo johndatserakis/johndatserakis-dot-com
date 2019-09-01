@@ -383,7 +383,7 @@ export default {
 
     &__lead-text {
       margin-bottom: 20px;
-      margin-left: 2px;
+      margin-left: 4px;
       font-size: 1.8rem;
       font-weight: bold;
       color: $black;
