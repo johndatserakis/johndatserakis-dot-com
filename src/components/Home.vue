@@ -383,12 +383,13 @@ export default {
 
     &__lead-text {
       margin-bottom: 20px;
-      margin-left: 4px;
+      margin-left: 6px;
       font-size: 1.8rem;
       font-weight: bold;
       color: $black;
 
       @media (min-width: 992px) {
+        margin-left: 0px;
         font-size: 4rem;
       }
     }
