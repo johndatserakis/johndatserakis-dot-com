@@ -29,6 +29,26 @@
 
       <div
         style="opacity: 0;"
+        id="wrapper__left-wrapper__blog-text"
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          throttle: 0,
+          once: true
+        }"
+        class="wrapper__left-wrapper__blog-text"
+      >
+        Check out my
+        <a
+          href="https://blog.johndatserakis.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >blog</a
+        >
+        to read some of my development notes.
+      </div>
+
+      <div
+        style="opacity: 0;"
         id="wrapper__left-wrapper__social-wrapper"
         v-observe-visibility="{
           callback: visibilityChanged,
@@ -61,26 +81,26 @@
         <p>
           Hi there. My name is John Datserakis. I'm a Lead Full-Stack Developer
           and Designer from Boston's North Shore. I currently make cool things
-          at <a href="https://promosis.com">Promosis</a>. The two blogs I write
-          for are
-          <a href="https://blog.innermonkdesign.com">The Inner Monk Blog</a> and
-          <a href="https://thehiphographies.com">The Hiphographies</a>. You can
-          find my iOS Apps and Games on the
+          at <a href="https://promosis.com">Promosis</a>. You can find my iOS
+          Apps and Games on the
           <a href="http://appstore.com/johndatserakis">App Store</a>. I like to
           write open-source code to share with the community. Check out my
           <a href="https://github.com/johndatserakis">GitHub</a> to see those
-          projects.
+          projects. Visit my
+          <a
+            href="https://blog.johndatserakis.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >blog</a
+          >
+          if you'd like to read my development notes.
         </p>
 
         <p>
           I'm always working on something new! My latest project is
-          <a
-            href="https://github.com/promosis/vue-programmatic-invisible-google-recaptcha"
-            target="_blank"
-            >vue-programmatic-invisible-google-recaptcha</a
-          >
-          - it's an open-source Vue component that helps Vue developers with the
-          programmatic invocation of Google's invisible reCAPTCHA.
+          <a href="https://www.rsvpkeeper.com" target="_blank">RSVP Keeper</a>
+          - an app that makes taking online RSVP's easier for hosts
+          <em>and</em> guests.
         </p>
 
         <p>
@@ -234,6 +254,7 @@ export default {
       if (
         isVisible &&
         (entry.target.id === "wrapper__left-wrapper__lead-text" ||
+          entry.target.id === "wrapper__left-wrapper__blog-text" ||
           entry.target.id === "wrapper__left-wrapper__lead-image")
       ) {
         await this.$animejs({
@@ -392,6 +413,10 @@ export default {
         padding-left: 0px;
         font-size: 4rem;
       }
+    }
+
+    &__blog-text {
+      margin-bottom: 20px;
     }
 
     &__sub-text {
