@@ -335,7 +335,7 @@ export default {
           return;
         }
 
-        const response = await axios.post("/contact", {
+        const response = await axios.post("/contacts", {
           email: this.contactFormData.email,
           message: this.contactFormData.message,
           type: "johndatserakis"
