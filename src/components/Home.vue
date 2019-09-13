@@ -58,11 +58,16 @@
         class="wrapper__left-wrapper__social-wrapper"
       >
         <div
-          v-for="socialItem in socialItems"
-          :key="socialItem.name"
+          v-for="(socialItem, index) in socialItems"
+          :key="index"
           class="wrapper__left-wrapper__social-wrapper__item"
         >
-          <a :href="socialItem.link" target="_blank">
+          <a
+            :href="socialItem.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            :title="socialItem.name"
+          >
             <i :class="'fa ' + socialItem.icon"></i>
           </a>
         </div>
@@ -113,57 +118,33 @@
           - it's open-source and written using Vue and Webpack.
         </p>
 
+        <hr />
+
         <div class="row justify-content-start">
           <div class="col-lg-8">
-            <form @submit.prevent="submitContactForm" autocomplete="off">
-              <div class="form-group">
-                <label>Your Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  name="contact-form-email"
-                  v-model.trim="contactFormData.email"
-                  required
-                />
-              </div>
+            <email-subscribe-form
+              :name="'johndatserakis-email-subscribe'"
+              :description="
+                'Signup to receive news about my latest work. I\'ll never spam or sell your information.'
+              "
+              :type="'johndatserakis-email-subscribe'"
+              :sandbox-email="false"
+            />
+          </div>
+        </div>
 
-              <div
-                class="form-group"
-                style="display:none !important"
-                tabindex="-1"
-                autocomplete="off"
-                aria-hidden
-              >
-                <label>Your Phone</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="contact-form-phone"
-                  v-model.trim="contactFormData.phone"
-                />
-              </div>
+        <hr />
 
-              <div class="form-group">
-                <label>Your Message</label>
-                <textarea
-                  class="form-control"
-                  name="contact-form-message"
-                  v-model.trim="contactFormData.message"
-                  required
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                id="contact-form-submit-button"
-                class="btn btn-primary btn-block mt-4"
-              >
-                <span v-if="pending">
-                  <i class="fa fa-gear fa-spin"></i> Submitting
-                </span>
-                <span v-else><i class="fa fa-rocket fa-fw"></i> Submit</span>
-              </button>
-            </form>
+        <div class="row justify-content-start">
+          <div class="col-lg-8">
+            <contact-form
+              :name="'johndatserakis-contact'"
+              :description="
+                'Have a question or need support? Leave me a message and I\'ll get back to you.'
+              "
+              :type="'johndatserakis-contact'"
+              :sandbox-email="false"
+            />
           </div>
         </div>
       </div>
@@ -181,8 +162,8 @@
     >
       <h1 class="wrapper__right-wrapper__lead-text">Links</h1>
       <div
-        v-for="project in projects"
-        :key="project.title"
+        v-for="(project, index) in projects"
+        :key="index"
         class="wrapper__right-wrapper__item"
       >
         <div class="wrapper__right-wrapper__item__title">
@@ -193,7 +174,8 @@
         </div>
         <div>
           <a
-            v-for="link in project.links"
+            v-for="(link, index) in project.links"
+            :key="index"
             :href="link.link"
             class="wrapper__right-wrapper__item__link"
             target="_blank"
@@ -209,6 +191,8 @@
 <script>
 import projects from "@/data/projects";
 import axios from "@/common/axios";
+import EmailSubscribeForm from "@/components/EmailSubscribeForm";
+import ContactForm from "@/components/ContactForm";
 
 export default {
   name: "home",
@@ -233,17 +217,16 @@ export default {
           link: "https://www.linkedin.com/in/johndatserakis"
         },
         {
+          name: "Product Hunt",
+          icon: "fa-product-hunt",
+          link: "https://www.producthunt.com/@johndatserakis"
+        },
+        {
           name: "CodePen",
           icon: "fa-codepen",
           link: "https://codepen.io/johndatserakis/"
         }
-      ],
-      contactFormData: {
-        email: null,
-        message: null,
-        phone: null
-      },
-      pending: false
+      ]
     };
   },
   computed: {},
@@ -319,46 +302,49 @@ export default {
           delay: 200
         }).finished;
       }
-    },
-
-    async submitContactForm() {
-      this.pending = true;
-
-      try {
-        if (this.contactFormData.phone) {
-          this.contactFormData = {
-            email: null,
-            message: null,
-            phone: null
-          };
-
-          return;
-        }
-
-        const response = await axios.post("/contacts", {
-          email: this.contactFormData.email,
-          message: this.contactFormData.message,
-          type: "johndatserakis"
-        });
-
-        this.$toasted.success("Message sent successfully. Thank you.");
-
-        this.contactFormData = {
-          email: null,
-          message: null,
-          phone: null
-        };
-      } catch (error) {
-        console.log(error);
-        this.$toasted.error(
-          "There was an error sending your message. Please try again or email me directly. Thank you."
-        );
-      } finally {
-        this.pending = false;
-      }
     }
+
+    // async submitContactForm() {
+    //   this.pending = true;
+
+    //   try {
+    //     if (this.contactFormData.phone) {
+    //       this.contactFormData = {
+    //         email: null,
+    //         message: null,
+    //         phone: null
+    //       };
+
+    //       return;
+    //     }
+
+    //     const response = await axios.post("/contacts", {
+    //       email: this.contactFormData.email,
+    //       message: this.contactFormData.message,
+    //       type: "johndatserakis"
+    //     });
+
+    //     this.$toasted.success("Message sent successfully. Thank you.");
+
+    //     this.contactFormData = {
+    //       email: null,
+    //       message: null,
+    //       phone: null
+    //     };
+    //   } catch (error) {
+    //     this.$toasted.error(
+    //       "There was an error sending your message. Please try again or email me directly. Thank you."
+    //     );
+    //   } finally {
+    //     this.pending = false;
+    //   }
+    // }
   },
-  mounted() {}
+  mounted() {},
+  components: {
+    EmailSubscribeForm,
+    ContactForm
+  }
 };
 </script>
 
