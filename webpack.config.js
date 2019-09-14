@@ -87,7 +87,8 @@ const config = {
       chunkFilename: (env !== 'production') ? '[id].css' : '[id].[hash].css',
     }),
     new CopyWebpackPlugin([
-      './src/social.png'
+      './src/social.png',
+      './src/ads.txt'
     ])
   ],
   resolve: {
