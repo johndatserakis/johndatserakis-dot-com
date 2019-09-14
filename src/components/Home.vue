@@ -303,42 +303,6 @@ export default {
         }).finished;
       }
     }
-
-    // async submitContactForm() {
-    //   this.pending = true;
-
-    //   try {
-    //     if (this.contactFormData.phone) {
-    //       this.contactFormData = {
-    //         email: null,
-    //         message: null,
-    //         phone: null
-    //       };
-
-    //       return;
-    //     }
-
-    //     const response = await axios.post("/contacts", {
-    //       email: this.contactFormData.email,
-    //       message: this.contactFormData.message,
-    //       type: "johndatserakis"
-    //     });
-
-    //     this.$toasted.success("Message sent successfully. Thank you.");
-
-    //     this.contactFormData = {
-    //       email: null,
-    //       message: null,
-    //       phone: null
-    //     };
-    //   } catch (error) {
-    //     this.$toasted.error(
-    //       "There was an error sending your message. Please try again or email me directly. Thank you."
-    //     );
-    //   } finally {
-    //     this.pending = false;
-    //   }
-    // }
   },
   mounted() {},
   components: {
