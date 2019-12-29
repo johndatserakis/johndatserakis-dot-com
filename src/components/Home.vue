@@ -84,14 +84,13 @@
         class="wrapper__left-wrapper__sub-text"
       >
         <p>
-          Hi there. My name is John Datserakis. I'm a Lead Full-Stack Developer
-          and Designer from Boston's North Shore. I currently make cool things
-          at <a href="https://promosis.com">Promosis</a>. You can find my iOS
-          Apps and Games on the
-          <a href="http://appstore.com/johndatserakis">App Store</a>. I like to
+          Hi there. My name is John Datserakis. I'm a Senior Software Engineer from Boston's North Shore. I currently make cool things
+          at <a href="https://www.bondlink.com/">BondLink</a>. I like to
           write open-source code to share with the community. Check out my
           <a href="https://github.com/johndatserakis">GitHub</a> to see those
-          projects. Visit my
+          projects. You can find my iOS
+          Apps and Games on the
+          <a href="http://appstore.com/johndatserakis">App Store</a>. Visit my
           <a
             href="https://blog.johndatserakis.com"
             target="_blank"
