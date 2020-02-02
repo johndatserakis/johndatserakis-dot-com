@@ -33,6 +33,7 @@
         "popper.js": "^1.14.3",
         "vue": "^2.5.16",
         "vue-analytics": "^5.12.2",
+        "vue-mailchimp-email-signup-form": "^1.0.0",
         "vue-observe-visibility": "^0.4.3",
         "vue-router": "^3.0.1",
         "vue-toasted": "^1.1.26"

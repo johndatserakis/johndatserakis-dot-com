@@ -119,30 +119,21 @@
 
         <hr />
 
-        <div class="row justify-content-start">
+        <div class="row">
           <div class="col-lg-8">
-            <email-subscribe-form
-              :name="'johndatserakis-email-subscribe'"
-              :description="
-                'Signup to receive news about my latest work. I\'ll never spam or sell your information.'
-              "
-              :type="'johndatserakis-email-subscribe'"
-              :sandbox-email="false"
-            />
+            <p>Have a question or need support? Leave send me a message at johndatserakis at gmail dot com and I'll get back to you.</p>
           </div>
         </div>
 
         <hr />
 
         <div class="row justify-content-start">
-          <div class="col-lg-8">
-            <contact-form
-              :name="'johndatserakis-contact'"
-              :description="
-                'Have a question or need support? Leave me a message and I\'ll get back to you.'
-              "
-              :type="'johndatserakis-contact'"
-              :sandbox-email="false"
+          <div class="col-lg-12">
+            <vue-mailchimp-email-signup-form
+              :elementId="'first-email-signup-form'"
+              :url="mailchimpUrl"
+              :title="'Subscribe to the Newsletter'"
+              :subtitle="'We take privacy seriously and we will never spam or sell your information.'"
             />
           </div>
         </div>
@@ -190,8 +181,7 @@
 <script>
 import projects from "@/data/projects";
 import axios from "@/common/axios";
-import EmailSubscribeForm from "@/components/EmailSubscribeForm";
-import ContactForm from "@/components/ContactForm";
+import VueMailchimpEmailSignupForm from "vue-mailchimp-email-signup-form";
 
 export default {
   name: "home",
@@ -225,7 +215,8 @@ export default {
           icon: "fa-codepen",
           link: "https://codepen.io/johndatserakis/"
         }
-      ]
+      ],
+      mailchimpUrl: process.env.GATSBY_MAILCHIMP_SUBSCRIBE_URL || ''
     };
   },
   computed: {},
@@ -305,13 +296,13 @@ export default {
   },
   mounted() {},
   components: {
-    EmailSubscribeForm,
-    ContactForm
+    VueMailchimpEmailSignupForm
   }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "../../node_modules/vue-mailchimp-email-signup-form/dist/vue-mailchimp-email-signup-form.css";
 @import "~@/assets/css/components/_variables.scss";
 
 .wrapper {
