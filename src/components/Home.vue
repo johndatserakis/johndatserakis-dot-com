@@ -210,7 +210,7 @@ export default {
           link: "https://codepen.io/johndatserakis/"
         }
       ],
-      mailchimpUrl: process.env.GATSBY_MAILCHIMP_SUBSCRIBE_URL || ''
+      mailchimpUrl: process.env.MAILCHIMP_SUBSCRIBE_URL || ''
     };
   },
   computed: {},
