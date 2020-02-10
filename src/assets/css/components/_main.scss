@@ -1,25 +1,30 @@
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body {
-    height: 100%;
-    text-rendering: optimizeLegibility;
-    color: $muted;
-    font-weight: 400;
-    font-size: 18px;
-    background: #fff;
-    font-family: 'Bitter', serif;
-    line-height: 1.7;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  color: $muted;
+  font-weight: 400;
+  font-size: 18px;
+  background: #fff;
+  font-family: "Bitter", serif;
+  line-height: 1.7;
 }
 
 //Main link styling
 a {
-    color: $blue;
+  color: $blue;
 
-    &:hover {
-        color: $dark-blue;
-    }
+  &:hover {
+    color: $dark-blue;
+  }
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

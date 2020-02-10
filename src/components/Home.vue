@@ -83,49 +83,43 @@
         }"
         class="wrapper__left-wrapper__sub-text"
       >
-        <p>
-          Hi there. My name is John Datserakis. I'm a Senior Software Engineer from Boston's North Shore. I currently make cool things
-          at <a href="https://www.bondlink.com/">BondLink</a>. I like to
-          write open-source code to share with the community. Check out my
-          <a href="https://github.com/johndatserakis">GitHub</a> to see those
-          projects. You can find my iOS
-          Apps and Games on the
-          <a href="http://appstore.com/johndatserakis">App Store</a>. Visit my
-          <a
-            href="https://blog.johndatserakis.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >blog</a
-          >
-          if you'd like to read my development notes.
-        </p>
+        <div class="mb-4">
+          <p>
+            Hi there. My name is John Datserakis. I'm a Senior Software Engineer from Boston's North Shore. I currently make cool things
+            at <a href="https://www.bondlink.com/">BondLink</a>. I like to
+            write open-source code to share with the community. Check out my
+            <a href="https://github.com/johndatserakis">GitHub</a> to see those
+            projects. You can find my iOS
+            Apps and Games on the
+            <a href="http://appstore.com/johndatserakis">App Store</a>. Visit my
+            <a
+              href="https://blog.johndatserakis.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >blog</a
+            >
+            if you'd like to read my development notes.
+          </p>
 
-        <p>
-          I'm always working on something new! My latest project is
-          <a href="https://www.rsvpkeeper.com" target="_blank">RSVP Keeper</a>
-          - an app that makes taking online RSVP's easier for hosts
-          <em>and</em> guests.
-        </p>
+          <p>
+            I'm always working on something new! My latest project is
+            <a href="https://www.rsvpkeeper.com" target="_blank">RSVP Keeper</a>
+            - an app that makes taking online RSVP's easier for hosts
+            <em>and</em> guests.
+          </p>
 
-        <p>
-          Thanks for checking out my work. Email me at johndatserakis at gmail
-          dot com or use the form below if you'd like to chat. If you like this
-          site you can
-          <a href="https://github.com/johndatserakis/johndatserakis-dot-com"
-            >fork it</a
-          >
-          - it's open-source and written using Vue and Webpack.
-        </p>
+          <p>
+            Thanks for checking out my work. Email me at johndatserakis at gmail
+            dot com or use the form below if you'd like to chat. If you like this
+            site you can
+            <a href="https://github.com/johndatserakis/johndatserakis-dot-com"
+              >fork it</a
+            >
+            - it's open-source and written using Vue and Webpack.
+          </p>
 
-        <hr />
-
-        <div class="row">
-          <div class="col-lg-8">
-            <p>Have a question or need support? Leave send me a message at johndatserakis at gmail dot com and I'll get back to you.</p>
-          </div>
+          <p>Have a question or need support? Leave send me a message at johndatserakis at gmail dot com and I'll get back to you.</p>
         </div>
-
-        <hr />
 
         <div class="row justify-content-start">
           <div class="col-lg-12">
@@ -181,7 +175,7 @@
 <script>
 import projects from "@/data/projects";
 import axios from "@/common/axios";
-import VueMailchimpEmailSignupForm from "vue-mailchimp-email-signup-form";
+import { VueMailchimpEmailSignupForm } from "vue-mailchimp-email-signup-form";
 
 export default {
   name: "home",
