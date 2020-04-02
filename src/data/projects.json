@@ -90,15 +90,15 @@
     ]
   },
   {
-    "title": "vue-screen-size (open-source) (for  Promosis)",
+    "title": "vue-screen-size (open-source)",
     "description": "Get easy and reactive access to the width and height of your screen.",
     "links": [
       {
-        "link": "https://github.com/promosis/vue-screen-size",
+        "link": "https://github.com/johndatserakis/vue-screen-size",
         "linkText": "View on GitHub"
       },
       {
-        "link": "https://promosis.github.io/vue-screen-size/",
+        "link": "https://johndatserakis.github.io/vue-screen-size/",
         "linkText": "View live demo"
       }
     ]
