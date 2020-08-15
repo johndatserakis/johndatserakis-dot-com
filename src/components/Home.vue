@@ -85,12 +85,12 @@
       >
         <div class="mb-4">
           <p>
-            Hi there. My name is John Datserakis. I'm a Senior Software Engineer from Boston's North Shore. I currently make cool things
-            at <a href="https://www.bondlink.com/">BondLink</a>. I like to
+            Hi there. My name is John Datserakis. I'm a Software Engineer from Boston's North Shore. I currently make cool things
+            at <a href="https://www.indigoag.com/">Indigo Ag</a>. I like to
             write open-source code to share with the community. Check out my
             <a href="https://github.com/johndatserakis">GitHub</a> to see those
             projects. You can find my iOS
-            Apps and Games on the
+            work on the
             <a href="http://appstore.com/johndatserakis">App Store</a>. Visit my
             <a
               href="https://blog.johndatserakis.com"
