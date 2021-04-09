@@ -90,8 +90,7 @@
             <a href="https://www.indigoag.com/">Indigo Ag</a>. I like to write
             open-source code to share with the community. Check out my
             <a href="https://github.com/johndatserakis">GitHub</a> to see those
-            projects. You can find my iOS work on the
-            <a href="http://appstore.com/johndatserakis">App Store</a>. Visit my
+            projects. Visit my
             <a
               href="https://blog.johndatserakis.com"
               target="_blank"
@@ -103,9 +102,8 @@
 
           <p>
             I'm always working on something new! My latest project is
-            <a href="https://www.rsvpkeeper.com" target="_blank">RSVP Keeper</a>
-            - an app that makes taking online RSVP's easier for hosts
-            <em>and</em> guests.
+            <a href="jolly-murdock-43b71d.netlify.app" target="_blank">Find the State</a>
+            - an simple game where you must find all the State in the contiguous USA on a map.
           </p>
 
           <p>
@@ -131,7 +129,7 @@
               :url="mailchimpUrl"
               :title="'Subscribe to the Newsletter'"
               :subtitle="
-                'We take privacy seriously and we will never spam or sell your information.'
+                'I take privacy seriously and will never spam or sell your information.'
               "
             />
           </div>
@@ -188,7 +186,6 @@
 
 <script>
 import projects from "@/data/projects";
-import axios from "@/common/axios";
 import { VueMailchimpEmailSignupForm } from "vue-mailchimp-email-signup-form";
 
 export default {

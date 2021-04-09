@@ -1,5 +1,23 @@
 [
   {
+    "title": "Find the State (open-source)",
+    "description": "Find all the States in the contiguous USA on a map. Simple enough..",
+    "links": [
+      {
+        "link": "https://jolly-murdock-43b71d.netlify.app/",
+        "linkText": "View live"
+      },
+      {
+        "link": "https://github.com/johndatserakis/find-the-state-ui",
+        "linkText": "View Frontend on GitHub"
+      },
+      {
+        "link": "https://github.com/johndatserakis/find-the-state-api",
+        "linkText": "View Backend on GitHub"
+      }
+    ]
+  },
+  {
     "title": "react-mailchimp-email-signup-form (open-source)",
     "description": "Easily collect email signups using MailChimp in your React projects.",
     "links": [
