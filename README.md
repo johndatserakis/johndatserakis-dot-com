@@ -6,13 +6,13 @@ The main code for johndatserakis.com. Built using [modern-webpack-starter](https
 
 ```bash
 # install dependencies
-npm install
+yarn
 
 # serve using webpack-dev-server with hot reload
-npm run watch
+yarn start
 
 # build for production
-npm run build
+yarn build
 ```
 
 ### License
