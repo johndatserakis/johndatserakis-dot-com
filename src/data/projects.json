@@ -104,15 +104,15 @@
     ]
   },
   {
-    "title": "vue-mock-layout (open-source) (for  Promosis)",
+    "title": "vue-mock-layout (open-source)",
     "description": "Easily mock the layout of your Vue apps.",
     "links": [
       {
-        "link": "https://github.com/promosis/vue-mock-layout",
+        "link": "https://github.com/johndatserakis/vue-mock-layout",
         "linkText": "View on GitHub"
       },
       {
-        "link": "https://promosis.github.io/vue-mock-layout/",
+        "link": "https://johndatserakis.github.io/vue-mock-layout/",
         "linkText": "View live demo"
       }
     ]
@@ -172,15 +172,15 @@
     ]
   },
   {
-    "title": "vue-programmatic-invisible-google-recaptcha (open-source) (for  Promosis)",
+    "title": "vue-programmatic-invisible-google-recaptcha (open-source)",
     "description": "A simple invisible Google reCAPTCHA component focused solely on programmatic invocation.",
     "links": [
       {
-        "link": "https://github.com/promosis/vue-programmatic-invisible-google-recaptcha",
+        "link": "https://github.com/johndatserakis/vue-programmatic-invisible-google-recaptcha",
         "linkText": "View on GitHub"
       },
       {
-        "link": "https://promosis.github.io/vue-programmatic-invisible-google-recaptcha/",
+        "link": "https://johndatserakis.github.io/vue-programmatic-invisible-google-recaptcha/",
         "linkText": "View live demo"
       }
     ]
@@ -228,11 +228,11 @@
     "description": "A simple file-upload utility that shows a preview of the uploaded image. Written in pure JavaScript. No dependencies. Works well with Bootstrap 4 or without a framework.",
     "links": [
       {
-        "link": "https://github.com/promosis/file-upload-with-preview",
+        "link": "https://github.com/johndatserakis/file-upload-with-preview",
         "linkText": "View on GitHub"
       },
       {
-        "link": "https://promosis.github.io/file-upload-with-preview/",
+        "link": "https://johndatserakis.github.io/file-upload-with-preview/",
         "linkText": "View live demo"
       }
     ]
@@ -284,11 +284,11 @@
     "description": "Show a banner with text, a decline button, and an accept button on your page. Remembers selection using cookies. Emits an event with current selection and on creation. Good for GDPR requirements.",
     "links": [
       {
-        "link": "https://github.com/promosis/vue-cookie-accept-decline",
+        "link": "https://github.com/johndatserakis/vue-cookie-accept-decline",
         "linkText": "View on GitHub"
       },
       {
-        "link": "https://promosis.github.io/vue-cookie-accept-decline/",
+        "link": "https://johndatserakis.github.io/vue-cookie-accept-decline/",
         "linkText": "View live demo"
       }
     ]

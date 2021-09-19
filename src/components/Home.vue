@@ -108,7 +108,7 @@
 
           <p>
             Thanks for checking out my work. Email me at johndatserakis at gmail
-            dot com or use the form below if you'd like to chat. If you like
+            dot com if you'd like to chat. If you like
             this site you can
             <a href="https://github.com/johndatserakis/johndatserakis-dot-com"
               >fork it</a
