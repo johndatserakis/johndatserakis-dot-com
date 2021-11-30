@@ -103,7 +103,7 @@
           <p>
             I'm always working on something new! My latest project is
             <a href="jolly-murdock-43b71d.netlify.app" target="_blank">Find the State</a>
-            - an simple game where you must find all the State in the contiguous USA on a map.
+            - an simple game where you must find all the States in the contiguous USA on a map.
           </p>
 
           <p>
