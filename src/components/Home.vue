@@ -102,14 +102,16 @@
 
           <p>
             I'm always working on something new! My latest project is
-            <a href="jolly-murdock-43b71d.netlify.app" target="_blank">Find the State</a>
-            - an simple game where you must find all the States in the contiguous USA on a map.
+            <a href="jolly-murdock-43b71d.netlify.app" target="_blank"
+              >Find the State</a
+            >
+            - a simple game where you must find all the States in the contiguous
+            USA on a map.
           </p>
 
           <p>
             Thanks for checking out my work. Email me at johndatserakis at gmail
-            dot com if you'd like to chat. If you like
-            this site you can
+            dot com if you'd like to chat. If you like this site you can
             <a href="https://github.com/johndatserakis/johndatserakis-dot-com"
               >fork it</a
             >
