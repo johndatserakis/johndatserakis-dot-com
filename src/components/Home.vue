@@ -85,8 +85,8 @@
       >
         <div class="mb-4">
           <p>
-            Hi there. My name is John Datserakis. I'm a Software Engineer from
-            Boston's North Shore. I currently make cool things at
+            Hi there. My name is John Datserakis. I'm a Senior Frontend Software
+            Engineer from Boston's North Shore. I currently make cool things at
             <a href="https://www.indigoag.com/">Indigo Ag</a>. I like to write
             open-source code to share with the community. Check out my
             <a href="https://github.com/johndatserakis">GitHub</a> to see those
@@ -102,7 +102,10 @@
 
           <p>
             I'm always working on something new! My latest project is
-            <a href="jolly-murdock-43b71d.netlify.app" target="_blank"
+            <a
+              href="https://find-the-state.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               >Find the State</a
             >
             - a simple game where you must find all the States in the contiguous
@@ -169,6 +172,7 @@
             :href="link.link"
             class="right-wrapper__item__link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i class="fa fa-external-link fa-fw"></i> {{ link.linkText }}
           </a>
