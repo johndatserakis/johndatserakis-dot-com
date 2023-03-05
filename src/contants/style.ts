@@ -1,3 +1,7 @@
+import { colors } from '@mui/joy';
+
+export const DEFAULT_PROGRAM_COLOR = colors.blue[500];
+
 export enum BoxShadow {
   ONE = 'rgba(0, 0, 0, 0.10) 0px 2px 8px',
   TWO = 'rgba(0, 0, 0, 0.18) 0px 2px 9px',

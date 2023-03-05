@@ -1,0 +1,27 @@
+{
+  "background_color": "#ffffff",
+  "description": "Hey there! My name's John Datserakis and I'm a Senior Software Engineer from Boston's North Shore.",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "favicon.ico",
+      "type": "image/x-icon"
+    },
+    {
+      "sizes": "192x192",
+      "src": "android-chrome-192x192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "android-chrome-512x512.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "John Datserakis",
+  "scope": "/",
+  "short_name": "John Datserakis",
+  "start_url": ".",
+  "theme_color": "#096BDE"
+}
