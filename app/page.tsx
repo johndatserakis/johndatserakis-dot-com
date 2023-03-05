@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { Chip, IconButton, Stack, Typography } from '@mui/joy';
 import Image from 'next/image';
 import { DualLayout } from 'src/components/DualLayout';
-import ProfileImage from 'public/john-datserakis-profile-image.png';
+import ProfileImage from 'public/images/john-datserakis-profile-image.png';
 import { BoxShadow } from 'src/contants/style';
 import { FaGithub, FaLinkedin, FaPencilAlt } from 'react-icons/fa';
 import { projects } from 'src/contants/data';

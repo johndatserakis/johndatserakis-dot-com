@@ -43,7 +43,7 @@ export const RootHead = () => (
       name="twitter:description"
     />
     <meta content="John Datserais Logo" name="twitter:image:alt" />
-    <meta content="/john-datserakis-profile-image.png" name="twitter:image" />
+    <meta content="/social.png" name="twitter:image" />
     <meta content="@johndatserakis" name="twitter:site" />
     <meta content="John Datserais" name="twitter:title" />
 
@@ -52,7 +52,7 @@ export const RootHead = () => (
       content="Hey there! My name's John Datserakis and I'm a Senior Software Engineer from Boston's North Shore."
       property="og:description"
     />
-    <meta content="/john-datserakis-profile-image.png" property="og:image" />
+    <meta content="/social.png" property="og:image" />
     <meta content="John Datserais" property="og:title" />
     <meta content="website" property="og:type" />
     <meta content="https://www.johndatserakis.com" property="og:url" />

@@ -1,6 +1,6 @@
 # johndatserakis-dot-com
 
-The codebase for johndatserakis.com. Built using React, TypeScript, and Next.js.
+The codebase for [johndatserakis.com](https://johndatserakis.com). Built using React, TypeScript, and Next.js.
 
 ## Links
 
