@@ -35,6 +35,7 @@ const ButtonGroup = styled.div`
 export const ProjectCard = ({ description, icon, links, title }: Project) => {
   const buttons = links.map(({ link, linkText }) => (
     <Button
+      color="info"
       component="a"
       endDecorator={<FiExternalLink />}
       href={link}
