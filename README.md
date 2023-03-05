@@ -1,22 +1,29 @@
 # johndatserakis-dot-com
 
-The main code for johndatserakis.com. Built using [modern-webpack-starter](https://github.com/johndatserakis/modern-webpack-starter).
+The codebase for johndatserakis.com. Built using React, TypeScript, and Next.js.
 
-### Installing / Getting started
+## Links
+
+- [Live Site](https://johndatserakis.com)
+- [GitHub](https://github.com/johndatserakis/johndatserakis-dot-com)
+
+## Development
 
 ```bash
-# install dependencies
+# Install dependencies
 yarn
 
-# serve using webpack-dev-server with hot reload
-yarn start
+# Watch changes during local development
+yarn dev
 
-# build for production
+# Build library
 yarn build
 ```
 
-### License
+## Other
 
-Copyright 2018 John Datserakis
+Go ahead and fork the project! Submit an issue if needed. Have fun!
+
+## License
 
 [MIT](http://opensource.org/licenses/MIT)

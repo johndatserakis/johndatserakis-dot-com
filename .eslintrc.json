@@ -1,0 +1,31 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"],
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-console": ["error"],
+    "react/no-unescaped-entities": "off",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        // https://github.com/lydell/eslint-plugin-simple-import-sort/tree/d1d59be47b08733990a8a62f7caf735cdad420f9#custom-grouping
+        "groups": [
+          ["^\\u0000"],
+          ["^@?\\w"],
+          // Add to this group to signify local absolute imports
+          ["^(app|jest-test-utils|pages|public|src)(/.*|$)"],
+          ["^\\."]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "sort-keys": ["error", "asc", { "caseSensitive": false, "natural": false, "minKeys": 2 }],
+    "react/no-unknown-property": "off"
+  }
+}

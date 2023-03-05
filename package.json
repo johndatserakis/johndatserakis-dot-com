@@ -1,66 +1,33 @@
 {
   "name": "johndatserakis-dot-com",
-  "version": "1.0.1",
-  "description": "The main code for johndatserakis.com.",
+  "version": "0.1.0",
   "private": true,
-  "author": "John Datserakis",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://johndatserakis@github.com/johndatserakis/johndatserakis-dot-com.git"
-  },
-  "bugs": {
-    "url": "https://github.com/johndatserakis/johndatserakis-dot-com/issues"
-  },
-  "keywords": [
-    "javacript",
-    "webpack",
-    "modern",
-    "starter"
-  ],
-  "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "rm -rf ./dist && cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "homepage": "https://github.com/johndatserakis/johndatserakis-dot-com#readme",
   "dependencies": {
-    "animejs": "^2.2.0",
-    "axios": "^0.18.0",
-    "bootstrap": "^4.1.1",
-    "dotenv-webpack": "^1.5.7",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.3",
-    "sass": "^1.58.3",
-    "vue": "^2.5.16",
-    "vue-analytics": "^5.12.2",
-    "vue-mailchimp-email-signup-form": "^1.1.1",
-    "vue-observe-visibility": "^0.4.3",
-    "vue-router": "^3.0.1",
-    "vue-toasted": "^1.1.26"
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource/public-sans": "^4.5.12",
+    "@mui/joy": "^5.0.0-alpha.69",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "next": "13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "typescript": "4.9.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.49",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.49",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.49",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.49",
-    "@babel/preset-env": "^7.0.0-beta.49",
-    "@babel/runtime": "^7.0.0-beta.49",
-    "babel-loader": "^8.0.0-beta.3",
-    "copy-webpack-plugin": "^4.5.4",
-    "cross-env": "^5.1.6",
-    "css-loader": "^0.28.11",
-    "file-loader": "^1.1.11",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.0",
-    "optimize-css-assets-webpack-plugin": "^4.0.2",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "uglifyjs-webpack-plugin": "^1.2.5",
-    "vue-loader": "^15.2.4",
-    "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.11.0",
-    "webpack-cli": "^3.0.2",
-    "webpack-dev-server": "^3.1.4"
+    "@netlify/plugin-nextjs": "appdir",
+    "@types/node": "18.14.6",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "prettier": "^2.8.4",
+    "sass": "^1.58.3"
   }
 }
