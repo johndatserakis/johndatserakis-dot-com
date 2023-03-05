@@ -1,6 +1,7 @@
-import { Project } from 'src/types/project';
 import { FaGithub } from 'react-icons/fa';
 import { FcDisplay, FcIdea, FcVoicePresentation } from 'react-icons/fc';
+
+import { Project } from 'src/types/project';
 
 export const projects: Project[] = [
   {

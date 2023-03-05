@@ -1,20 +1,9 @@
 {
-  "name": "johndatserakis-dot-com",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/public-sans": "^4.5.12",
     "@mui/joy": "^5.0.0-alpha.69",
-    "eslint": "8.35.0",
-    "eslint-config-next": "13.2.3",
     "next": "13.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -27,7 +16,24 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "prettier": "^2.8.4",
     "sass": "^1.58.3"
-  }
+  },
+  "name": "johndatserakis-dot-com",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "prettier": "yarn prettier:all",
+    "prettier:all": "npx prettier --write .",
+    "prettier:app": "npx prettier --write '{pages/**/*,src/**/*}'"
+  },
+  "version": "0.1.0"
 }

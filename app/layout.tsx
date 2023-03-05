@@ -1,9 +1,10 @@
 'use client';
 
-import { CssVarsProvider, CssBaseline } from '@mui/joy';
-import { RootHead } from 'src/components/main/Head';
-
 import 'src/styles/globals.scss';
+
+import { CssBaseline, CssVarsProvider } from '@mui/joy';
+
+import { RootHead } from 'src/components/main/Head';
 import { sourceSans3, theme } from 'src/styles/theme';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

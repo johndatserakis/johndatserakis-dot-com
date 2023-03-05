@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 import { Button, Card, Divider, Typography } from '@mui/joy';
-import { Project } from 'src/types/project';
 import { FcLink } from 'react-icons/fc';
 import { FiExternalLink } from 'react-icons/fi';
-import { BoxShadow } from 'src/contants/style';
+
+import { BoxShadow, BREAKPOINT } from 'src/contants/style';
+import { Project } from 'src/types/project';
 
 const Container = styled(Card)`
   box-shadow: ${BoxShadow.ONE};
@@ -29,7 +30,13 @@ const HeaderContainer = styled.div`
 
 const ButtonGroup = styled.div`
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
+
+  @media (min-width: ${BREAKPOINT}px) {
+    flex-direction: row;
+  }
 `;
 
 export const ProjectCard = ({ description, icon, links, title }: Project) => {

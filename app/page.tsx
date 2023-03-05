@@ -3,12 +3,13 @@
 import styled from '@emotion/styled';
 import { Chip, IconButton, Stack, Typography } from '@mui/joy';
 import Image from 'next/image';
-import { DualLayout } from 'src/components/DualLayout';
-import ProfileImage from 'public/images/john-datserakis-profile-image.png';
-import { BoxShadow, DEFAULT_PROGRAM_COLOR } from 'src/contants/style';
 import { FaGithub, FaLinkedin, FaPencilAlt } from 'react-icons/fa';
-import { projects } from 'src/contants/data';
+
+import ProfileImage from 'public/images/john-datserakis-profile-image.png';
+import { DualLayout } from 'src/components/DualLayout';
 import { ProjectCard } from 'src/components/ProjectCard';
+import { projects } from 'src/contants/data';
+import { BoxShadow, DEFAULT_PROGRAM_COLOR } from 'src/contants/style';
 
 const StyledImage = styled(Image)`
   filter: drop-shadow(${BoxShadow.THREE});
