@@ -39,6 +39,7 @@ export const ProjectCard = ({ description, icon, links, title }: Project) => {
       component="a"
       endDecorator={<FiExternalLink />}
       href={link}
+      key={`${link}-${linkText}`}
       rel="noopener noreferrer"
       size="sm"
       target="_blank"

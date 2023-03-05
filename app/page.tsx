@@ -29,7 +29,9 @@ const RightContentContainer = styled.div`
 `;
 
 const Home = () => {
-  const projectCards = projects.map((project) => <ProjectCard {...project} />);
+  const projectCards = projects.map((project) => (
+    <ProjectCard key={`${project.title}-${project.description}`} {...project} />
+  ));
 
   return (
     <DualLayout

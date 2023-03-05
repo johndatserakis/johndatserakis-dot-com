@@ -56,11 +56,5 @@ export const RootHead = () => (
     <meta content="John Datserais" property="og:title" />
     <meta content="website" property="og:type" />
     <meta content="https://www.johndatserakis.com" property="og:url" />
-
-    {/* Intersection Observer Polyfill */}
-    <Script
-      crossOrigin="anonymous"
-      src="//polyfill.io/v3/polyfill.min.js?features=es2015,IntersectionObserver"
-    />
   </>
 );
