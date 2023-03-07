@@ -1,3 +1,5 @@
+import Script from 'next/script';
+
 import { DEFAULT_PROGRAM_COLOR } from 'src/contants/style';
 
 export const RootHead = () => (
@@ -55,5 +57,25 @@ export const RootHead = () => (
     <meta content="John Datserais" property="og:title" />
     <meta content="website" property="og:type" />
     <meta content="https://www.johndatserakis.com" property="og:url" />
+
+    {/* Global Site Tag (gtag.js) - Google Analytics */}
+    <Script
+      async
+      id="google-analytics"
+      src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
+    />
+    <Script
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}', {
+            page_path: window.location.pathname,
+          });
+        `,
+      }}
+      id="google-analytics-script"
+    />
   </>
 );
