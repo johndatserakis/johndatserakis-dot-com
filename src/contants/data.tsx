@@ -268,7 +268,7 @@ export const projects: Project[] = [
         linkText: 'View live demo',
       },
     ],
-    title: 'file-upload-with-preview (open-source) (for Promosis)',
+    title: 'file-upload-with-preview (open-source)',
   },
   {
     description:
@@ -332,7 +332,7 @@ export const projects: Project[] = [
         linkText: 'View live demo',
       },
     ],
-    title: 'vue-cookie-accept-decline (open-source) (for Promosis)',
+    title: 'vue-cookie-accept-decline (open-source)',
   },
   {
     description:

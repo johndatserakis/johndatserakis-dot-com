@@ -32,6 +32,7 @@ export const useScrolledToBottom = ({ ref }: UseScrolledToBottomOpts) => {
 };
 
 interface ScrollingMouseIconProps {
+  className?: string;
   isVisible: boolean;
 }
 
@@ -67,8 +68,8 @@ const ScrollIcon = styled.div`
   }
 `;
 
-export const ScrollingMouseIcon = ({ isVisible }: ScrollingMouseIconProps) => (
-  <Mouse isVisible={isVisible}>
+export const ScrollingMouseIcon = ({ className, isVisible }: ScrollingMouseIconProps) => (
+  <Mouse className={className} isVisible={isVisible}>
     <ScrollIcon />
   </Mouse>
 );

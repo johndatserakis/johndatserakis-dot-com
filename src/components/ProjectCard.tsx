@@ -59,7 +59,7 @@ export const ProjectCard = ({ description, icon, links, title }: Project) => {
     <Container>
       <HeaderContainer>
         <IconContainer>{icon !== undefined ? icon : <FcLink />}</IconContainer>
-        <Typography gutterBottom={false} level="h4" lineHeight="1.2">
+        <Typography component="h3" gutterBottom={false} level="h4" lineHeight="1.2">
           {title}
         </Typography>
       </HeaderContainer>

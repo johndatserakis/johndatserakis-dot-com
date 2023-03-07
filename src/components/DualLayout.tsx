@@ -36,6 +36,14 @@ const RightContainer = styled.div`
   overflow: auto;
 `;
 
+const StyledScrollingMouseIcon = styled(ScrollingMouseIcon)`
+  display: none;
+
+  @media (min-width: ${BREAKPOINT}px) {
+    display: block;
+  }
+`;
+
 interface DualLayoutProps {
   leftContent: ReactNode;
   rightContent: ReactNode;
@@ -50,7 +58,7 @@ export const DualLayout = ({ leftContent, rightContent }: DualLayoutProps) => {
       <LeftContainer>{leftContent}</LeftContainer>
       <RightContainer ref={divRef}>
         {rightContent}
-        <ScrollingMouseIcon isVisible={!isScrolledToBottom} />
+        <StyledScrollingMouseIcon isVisible={!isScrolledToBottom} />
       </RightContainer>
     </Container>
   );
