@@ -1,5 +1,35 @@
 import styled from '@emotion/styled';
 import { colors } from '@mui/joy';
+import { RefObject, useEffect, useState } from 'react';
+
+interface UseScrolledToBottomOpts {
+  ref: RefObject<HTMLDivElement>;
+}
+
+export const useScrolledToBottom = ({ ref }: UseScrolledToBottomOpts) => {
+  const [isScrolledToBottom, setIsScrolledToBottom] = useState(false);
+
+  useEffect(() => {
+    const div = ref.current;
+
+    if (!div) return;
+
+    const handleScroll = () => {
+      const { scrollTop, offsetHeight, scrollHeight } = div;
+      const isBottom = scrollTop + offsetHeight >= scrollHeight;
+
+      setIsScrolledToBottom(isBottom);
+    };
+
+    div.addEventListener('scroll', handleScroll);
+
+    return () => {
+      div.removeEventListener('scroll', handleScroll);
+    };
+  }, [ref]);
+
+  return isScrolledToBottom;
+};
 
 interface ScrollingMouseIconProps {
   isVisible: boolean;

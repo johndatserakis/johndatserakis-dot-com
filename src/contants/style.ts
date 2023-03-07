@@ -1,6 +1,8 @@
 import { colors } from '@mui/joy';
 
 export const BREAKPOINT = 800;
+export const BREAKPOINT_LARGE = 1400;
+export const BREAKPOINT_EXTRA_LARGE = 2000;
 export const DEFAULT_PROGRAM_COLOR = colors.purple[500];
 
 export enum BoxShadow {

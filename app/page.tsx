@@ -115,7 +115,7 @@ const Home = () => {
       }
       rightContent={
         <RightContentContainer>
-          <Stack alignItems="center" flexDirection="row" gap={2}>
+          <Stack alignItems="center" flexDirection="row" gap={2} mb={-1}>
             <Typography level="h2">Links</Typography>
             <div>
               <Chip color="info" size="sm">

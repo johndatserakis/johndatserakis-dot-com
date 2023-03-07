@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { colors } from '@mui/joy';
-import { ReactNode, useState } from 'react';
+import { ReactNode, useRef } from 'react';
 
-import { ScrollingMouseIcon } from 'src/components/ScrollingMouseIcon';
-import { BREAKPOINT } from 'src/contants/style';
+import { ScrollingMouseIcon, useScrolledToBottom } from 'src/components/ScrollingMouseIcon';
+import { BREAKPOINT, BREAKPOINT_EXTRA_LARGE } from 'src/contants/style';
 
 const Container = styled.div`
   display: flex;
@@ -16,6 +16,10 @@ const Container = styled.div`
     grid-template-columns: 1fr 1fr;
     height: 100%;
     width: 100%;
+  }
+
+  @media (min-width: ${BREAKPOINT_EXTRA_LARGE}px) {
+    grid-template-columns: 0.4fr 1fr;
   }
 `;
 
@@ -38,21 +42,13 @@ interface DualLayoutProps {
 }
 
 export const DualLayout = ({ leftContent, rightContent }: DualLayoutProps) => {
-  const [isScrolledToBottom, setIsScrolledToBottom] = useState(false);
-
-  const onScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    const castedEventTarget = e.target as HTMLDivElement;
-    const isBottom =
-      castedEventTarget.scrollHeight - castedEventTarget.clientHeight <=
-      castedEventTarget.scrollTop;
-
-    setIsScrolledToBottom(isBottom);
-  };
+  const divRef = useRef<HTMLDivElement>(null);
+  const isScrolledToBottom = useScrolledToBottom({ ref: divRef });
 
   return (
     <Container>
       <LeftContainer>{leftContent}</LeftContainer>
-      <RightContainer onScroll={onScroll}>
+      <RightContainer ref={divRef}>
         {rightContent}
         <ScrollingMouseIcon isVisible={!isScrolledToBottom} />
       </RightContainer>
