@@ -4,6 +4,7 @@
     "@emotion/styled": "^11.10.6",
     "@fontsource/public-sans": "^4.5.12",
     "@mui/joy": "^5.0.0-alpha.69",
+    "logrocket": "^3.0.1",
     "next": "13.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",

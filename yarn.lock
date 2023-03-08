@@ -3876,6 +3876,7 @@ __metadata:
     eslint-config-next: 13.2.3
     eslint-config-prettier: ^8.6.0
     eslint-plugin-simple-import-sort: ^10.0.0
+    logrocket: ^3.0.1
     next: 13.2.3
     prettier: ^2.8.4
     react: 18.2.0
@@ -4125,6 +4126,13 @@ __metadata:
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
+"logrocket@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "logrocket@npm:3.0.1"
+  checksum: aa0024101d3696a81f56330726b75bcb20d880a58987f12e61cf83b9bca23964bc3928388ecb0a7bbfb83046db50a9318903de5a812c04ca1deb78b6601fdad1
   languageName: node
   linkType: hard
 
