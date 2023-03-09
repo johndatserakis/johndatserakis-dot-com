@@ -16,7 +16,8 @@ export const useScrolledToBottom = ({ ref }: UseScrolledToBottomOpts) => {
 
     const handleScroll = () => {
       const { scrollTop, offsetHeight, scrollHeight } = div;
-      const isBottom = scrollTop + offsetHeight >= scrollHeight;
+      const isBottom =
+        Math.round(scrollTop) + Math.round(offsetHeight) >= Math.round(scrollHeight) - 25;
 
       setIsScrolledToBottom(isBottom);
     };
