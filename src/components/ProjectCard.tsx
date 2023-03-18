@@ -3,7 +3,7 @@ import { Button, Card, Divider, Typography } from '@mui/joy';
 import { FcLink } from 'react-icons/fc';
 import { FiExternalLink } from 'react-icons/fi';
 
-import { BoxShadow, BREAKPOINT } from 'src/contants/style';
+import { BoxShadow, BREAKPOINT } from 'src/constants/style';
 import { Project } from 'src/types/project';
 
 const Container = styled(Card)`

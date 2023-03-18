@@ -9,8 +9,8 @@ import ProfileImage from 'public/images/john-datserakis-profile-image.png';
 import { DualLayout } from 'src/components/DualLayout';
 import { GitHubCorner } from 'src/components/GitHubCorner';
 import { ProjectCard } from 'src/components/ProjectCard';
-import { projects } from 'src/contants/data';
-import { BoxShadow, DEFAULT_PROGRAM_COLOR } from 'src/contants/style';
+import { projects } from 'src/constants/data';
+import { BoxShadow, DEFAULT_PROGRAM_COLOR } from 'src/constants/style';
 
 const StyledImage = styled(Image)`
   filter: drop-shadow(${BoxShadow.THREE});
@@ -80,7 +80,7 @@ const Home = () => {
               </Typography>
               <Typography>
                 Hey there! My name's John Datserakis and I'm a Senior Software Engineer from
-                Boston's North Shore. Right now, I'm building some seriously cool stuff over at{' '}
+                Boston's North Shore. Right now, I'm building some cool stuff over at{' '}
                 <a href="https://www.indigoag.com/" rel="noopener noreferrer" target="_blank">
                   Indigo Ag
                 </a>

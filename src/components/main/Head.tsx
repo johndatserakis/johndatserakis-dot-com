@@ -1,6 +1,6 @@
 import Script from 'next/script';
 
-import { DEFAULT_PROGRAM_COLOR } from 'src/contants/style';
+import { DEFAULT_PROGRAM_COLOR } from 'src/constants/style';
 
 export const RootHead = () => (
   <>

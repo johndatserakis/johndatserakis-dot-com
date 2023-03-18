@@ -3,7 +3,7 @@ import { colors } from '@mui/joy';
 import { ReactNode, useRef } from 'react';
 
 import { ScrollingMouseIcon, useScrolledToBottom } from 'src/components/ScrollingMouseIcon';
-import { BREAKPOINT, BREAKPOINT_EXTRA_LARGE } from 'src/contants/style';
+import { BREAKPOINT, BREAKPOINT_EXTRA_LARGE } from 'src/constants/style';
 
 const Container = styled.div`
   display: flex;

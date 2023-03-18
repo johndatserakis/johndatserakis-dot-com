@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { DEFAULT_PROGRAM_COLOR } from 'src/contants/style';
+import { DEFAULT_PROGRAM_COLOR } from 'src/constants/style';
 
 const URL = 'https://github.com/johndatserakis/johndatserakis-dot-com';
 const COLOR_BACKGROUND = DEFAULT_PROGRAM_COLOR;

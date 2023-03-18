@@ -5,6 +5,22 @@ import { Project } from 'src/types/project';
 
 export const projects: Project[] = [
   {
+    description:
+      'Simple file-upload utility that shows a preview of the uploaded image. Written in TypeScript. No dependencies. Works well with or without a framework.',
+    icon: <FaGithub />,
+    links: [
+      {
+        link: 'https://github.com/johndatserakis/file-upload-with-preview',
+        linkText: 'View on GitHub',
+      },
+      {
+        link: 'https://johndatserakis.github.io/file-upload-with-preview',
+        linkText: 'View live demo',
+      },
+    ],
+    title: 'file-upload-with-preview (open-source)',
+  },
+  {
     description: 'Find all the States in the contiguous USA on a map. Simple enough..',
     icon: <FcDisplay />,
     links: [
@@ -22,6 +38,18 @@ export const projects: Project[] = [
       },
     ],
     title: 'Find the State (open-source)',
+  },
+  {
+    description:
+      "Easily accept RSVP's for your Wedding, Shower, Bar Mitzvah, or any other upcoming event. Simple for you to set up, easy for your guests to fill out.",
+    icon: <FcIdea />,
+    links: [
+      {
+        link: 'https://www.rsvpkeeper.com',
+        linkText: 'View website',
+      },
+    ],
+    title: 'RSVP Keeper',
   },
   {
     description: 'VoV 125: React and Typescript for a Vue developer with John Datserakis',
@@ -63,18 +91,6 @@ export const projects: Project[] = [
       },
     ],
     title: 'vue-mailchimp-email-signup-form (open-source)',
-  },
-  {
-    description:
-      "Easily accept RSVP's for your Wedding, Shower, Bar Mitzvah, or any other upcoming event. Simple for you to set up, easy for your guests to fill out.",
-    icon: <FcIdea />,
-    links: [
-      {
-        link: 'https://www.rsvpkeeper.com',
-        linkText: 'View website',
-      },
-    ],
-    title: 'RSVP Keeper',
   },
   {
     description:
@@ -253,22 +269,6 @@ export const projects: Project[] = [
       },
     ],
     title: 'vue-countable (open-source)',
-  },
-  {
-    description:
-      'A simple file-upload utility that shows a preview of the uploaded image. Written in pure JavaScript. No dependencies. Works well with Bootstrap 4 or without a framework.',
-    icon: <FaGithub />,
-    links: [
-      {
-        link: 'https://github.com/johndatserakis/file-upload-with-preview',
-        linkText: 'View on GitHub',
-      },
-      {
-        link: 'https://johndatserakis.github.io/file-upload-with-preview',
-        linkText: 'View live demo',
-      },
-    ],
-    title: 'file-upload-with-preview (open-source)',
   },
   {
     description:
