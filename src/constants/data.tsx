@@ -56,7 +56,7 @@ export const projects: Project[] = [
     icon: <FcVoicePresentation />,
     links: [
       {
-        link: 'https://devchat.tv/views-on-vue/vov-125-react-and-typescript-for-a-vue-developer-with-john-datserakis',
+        link: 'https://podcasts.apple.com/us/podcast/vov-125-react-typescript-for-vue-developer-john-datserakis/id1364741105?i=1000495398406',
         linkText: 'Listen to the Podcast',
       },
     ],
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     icon: <FcVoicePresentation />,
     links: [
       {
-        link: 'https://devchat.tv/views-on-vue/vov-045-comparing-the-react-and-vue-ecosystems-with-a-real-world-spa-with-john-datserakis',
+        link: 'https://podcasts.apple.com/np/podcast/vov-045-comparing-react-vue-ecosystems-real-world-spa/id1364741105?i=1000428351571',
         linkText: 'Listen to the Podcast',
       },
     ],
