@@ -6,6 +6,18 @@ import { Project } from 'src/types/project';
 export const projects: Project[] = [
   {
     description:
+      "Coasts cost. Find companies that sell American-made products.",
+    icon: <FcIdea />,
+    links: [
+      {
+        link: 'https://www.spendstate.com',
+        linkText: 'View website',
+      },
+    ],
+    title: 'SpendState',
+  },
+  {
+    description:
       'Simple file-upload utility that shows a preview of the uploaded image. Written in TypeScript. No dependencies. Works well with or without a framework.',
     icon: <FaGithub />,
     links: [
