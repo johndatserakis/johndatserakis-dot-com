@@ -126,7 +126,7 @@ export const projects: Project[] = [
     icon: <FcIdea />,
     links: [
       {
-        link: 'https://www.bloombandma.com',
+        link: 'https://dreamy-bose-8eac92.netlify.app',
         linkText: 'View website',
       },
     ],
