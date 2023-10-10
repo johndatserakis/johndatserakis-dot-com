@@ -14,6 +14,7 @@ import { BoxShadow, DEFAULT_PROGRAM_COLOR } from 'src/constants/style';
 
 const StyledImage = styled(Image)`
   filter: drop-shadow(${BoxShadow.THREE});
+  border-radius: 50%;
 `;
 
 const LeftContentContainer = styled.div`
