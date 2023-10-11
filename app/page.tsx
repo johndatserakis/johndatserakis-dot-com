@@ -5,7 +5,7 @@ import { Chip, IconButton, Stack, Typography } from '@mui/joy';
 import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaPencilAlt } from 'react-icons/fa';
 
-import ProfileImage from 'public/images/john-datserakis-profile-image.png';
+import ProfileImage from 'public/images/john-datserakis-profile-image.jpg';
 import { DualLayout } from 'src/components/DualLayout';
 import { GitHubCorner } from 'src/components/GitHubCorner';
 import { ProjectCard } from 'src/components/ProjectCard';
