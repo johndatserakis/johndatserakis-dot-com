@@ -6,15 +6,27 @@ import { Project } from 'src/types/project';
 export const projects: Project[] = [
   {
     description:
-      "Coasts cost. Find companies that sell American-made products.",
+      "Easily accept RSVP's for your Wedding, Shower, Bar Mitzvah, or any other upcoming event. Simple for you to set up, easy for your guests to fill out.",
     icon: <FcIdea />,
     links: [
       {
-        link: 'https://www.spendstate.com',
+        link: 'https://www.rsvpkeeper.com',
         linkText: 'View website',
       },
     ],
-    title: 'SpendState',
+    title: 'RSVP Keeper',
+  },
+  {
+    description:
+      'Link control is an extension that lets you adjust the color of your previously viewed links.',
+    icon: <FcIdea />,
+    links: [
+      {
+        link: 'https://chrome.google.com/webstore/detail/link-control/dibehcgiapedhoehgpinmkdmahlheekc',
+        linkText: 'View in Chrome Web Store',
+      },
+    ],
+    title: 'Link Control',
   },
   {
     description:
@@ -52,16 +64,30 @@ export const projects: Project[] = [
     title: 'Find the State (open-source)',
   },
   {
-    description:
-      "Easily accept RSVP's for your Wedding, Shower, Bar Mitzvah, or any other upcoming event. Simple for you to set up, easy for your guests to fill out.",
+    description: 'A simple, pretty navbar for your Vue projects.',
+    icon: <FaGithub />,
+    links: [
+      {
+        link: 'https://github.com/johndatserakis/vue-navigation-bar',
+        linkText: 'View on GitHub',
+      },
+      {
+        link: 'https://johndatserakis.github.io/vue-navigation-bar',
+        linkText: 'View live demo',
+      },
+    ],
+    title: 'vue-navigation-bar (open-source)',
+  },
+  {
+    description: 'Coasts cost. Find companies that sell American-made products.',
     icon: <FcIdea />,
     links: [
       {
-        link: 'https://www.rsvpkeeper.com',
+        link: 'https://www.spendstate.com',
         linkText: 'View website',
       },
     ],
-    title: 'RSVP Keeper',
+    title: 'SpendState',
   },
   {
     description: 'VoV 125: React and Typescript for a Vue developer with John Datserakis',
@@ -133,21 +159,6 @@ export const projects: Project[] = [
     title: 'bloom. website',
   },
   {
-    description: 'A simple, pretty navbar for your Vue projects.',
-    icon: <FaGithub />,
-    links: [
-      {
-        link: 'https://github.com/johndatserakis/vue-navigation-bar',
-        linkText: 'View on GitHub',
-      },
-      {
-        link: 'https://johndatserakis.github.io/vue-navigation-bar',
-        linkText: 'View live demo',
-      },
-    ],
-    title: 'vue-navigation-bar (open-source)',
-  },
-  {
     description: 'Easily mock the layout of your Vue apps.',
     icon: <FaGithub />,
     links: [
@@ -188,18 +199,6 @@ export const projects: Project[] = [
       },
     ],
     title: 'Guest on the Views on Vue podcast',
-  },
-  {
-    description:
-      'Link control is an extension that lets you adjust the color of your previously viewed links.',
-    icon: <FcIdea />,
-    links: [
-      {
-        link: 'https://chrome.google.com/webstore/detail/link-control/dibehcgiapedhoehgpinmkdmahlheekc',
-        linkText: 'View in Chrome Web Store',
-      },
-    ],
-    title: 'Link Control',
   },
   {
     description: 'Best Meta makes it easy to browse the most popular products on Amazon.',
