@@ -82,8 +82,8 @@ const Home = () => {
               <Typography>
                 Hey there! My name's John Datserakis and I'm a Senior Software Engineer from
                 Boston's North Shore. Right now, I'm building some cool stuff over at{' '}
-                <a href="https://www.mailgun.com/" rel="noopener noreferrer" target="_blank">
-                  Mailgun
+                <a href="https://www.shopify.com/" rel="noopener noreferrer" target="_blank">
+                  Shopify
                 </a>
                 .
               </Typography>
